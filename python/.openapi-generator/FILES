@@ -119,6 +119,4 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_evaluate_model_response.py
-test/test_stock_analysis_excel_downloader_controller_api.py
 tox.ini

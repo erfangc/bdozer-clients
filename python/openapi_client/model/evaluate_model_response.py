@@ -29,8 +29,10 @@ from openapi_client.model_utils import (  # noqa: F401
 def lazy_import():
     from openapi_client.model.cell import Cell
     from openapi_client.model.derived_stock_analytics import DerivedStockAnalytics
+    from openapi_client.model.model import Model
     globals()['Cell'] = Cell
     globals()['DerivedStockAnalytics'] = DerivedStockAnalytics
+    globals()['Model'] = Model
 
 
 class EvaluateModelResponse(ModelNormal):
@@ -79,6 +81,7 @@ class EvaluateModelResponse(ModelNormal):
         """
         lazy_import()
         return {
+            'model': (Model,),  # noqa: E501
             'cells': ([Cell],),  # noqa: E501
             'derived_stock_analytics': (DerivedStockAnalytics,),  # noqa: E501
         }
@@ -89,6 +92,7 @@ class EvaluateModelResponse(ModelNormal):
 
 
     attribute_map = {
+        'model': 'model',  # noqa: E501
         'cells': 'cells',  # noqa: E501
         'derived_stock_analytics': 'derivedStockAnalytics',  # noqa: E501
     }
@@ -105,10 +109,11 @@ class EvaluateModelResponse(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, cells, derived_stock_analytics, *args, **kwargs):  # noqa: E501
+    def __init__(self, model, cells, derived_stock_analytics, *args, **kwargs):  # noqa: E501
         """EvaluateModelResponse - a model defined in OpenAPI
 
         Args:
+            model (Model):
             cells ([Cell]):
             derived_stock_analytics (DerivedStockAnalytics):
 
@@ -168,6 +173,7 @@ class EvaluateModelResponse(ModelNormal):
         self._configuration = _configuration
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
+        self.model = model
         self.cells = cells
         self.derived_stock_analytics = derived_stock_analytics
         for var_name, var_value in kwargs.items():

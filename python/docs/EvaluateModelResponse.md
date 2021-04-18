@@ -4,6 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**model** | [**Model**](Model.md) |  | 
 **cells** | [**[Cell]**](Cell.md) |  | 
 **derived_stock_analytics** | [**DerivedStockAnalytics**](DerivedStockAnalytics.md) |  | 
 
