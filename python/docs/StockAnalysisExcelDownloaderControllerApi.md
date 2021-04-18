@@ -1,14 +1,14 @@
-# openapi_client.MxParserControllerApi
+# openapi_client.StockAnalysisExcelDownloaderControllerApi
 
 All URIs are relative to *http://localhost:8080*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**evaluate**](MxParserControllerApi.md#evaluate) | **POST** /api/mxparser | 
+[**download**](StockAnalysisExcelDownloaderControllerApi.md#download) | **GET** /api/stock-analyzer/workflow/{id}/download | 
 
 
-# **evaluate**
-> MxParserEvaluateResponse evaluate(mx_parser_evaluate_request)
+# **download**
+> [str] download(id)
 
 
 
@@ -17,9 +17,7 @@ Method | HTTP request | Description
 ```python
 import time
 import openapi_client
-from openapi_client.api import mx_parser_controller_api
-from openapi_client.model.mx_parser_evaluate_request import MxParserEvaluateRequest
-from openapi_client.model.mx_parser_evaluate_response import MxParserEvaluateResponse
+from openapi_client.api import stock_analysis_excel_downloader_controller_api
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
@@ -31,17 +29,15 @@ configuration = openapi_client.Configuration(
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = mx_parser_controller_api.MxParserControllerApi(api_client)
-    mx_parser_evaluate_request = MxParserEvaluateRequest(
-        formula="formula_example",
-    ) # MxParserEvaluateRequest | 
+    api_instance = stock_analysis_excel_downloader_controller_api.StockAnalysisExcelDownloaderControllerApi(api_client)
+    id = "id_example" # str | 
 
     # example passing only required values which don't have defaults set
     try:
-        api_response = api_instance.evaluate(mx_parser_evaluate_request)
+        api_response = api_instance.download(id)
         pprint(api_response)
     except openapi_client.ApiException as e:
-        print("Exception when calling MxParserControllerApi->evaluate: %s\n" % e)
+        print("Exception when calling StockAnalysisExcelDownloaderControllerApi->download: %s\n" % e)
 ```
 
 
@@ -49,11 +45,11 @@ with openapi_client.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **mx_parser_evaluate_request** | [**MxParserEvaluateRequest**](MxParserEvaluateRequest.md)|  |
+ **id** | **str**|  |
 
 ### Return type
 
-[**MxParserEvaluateResponse**](MxParserEvaluateResponse.md)
+**[str]**
 
 ### Authorization
 
@@ -61,7 +57,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 

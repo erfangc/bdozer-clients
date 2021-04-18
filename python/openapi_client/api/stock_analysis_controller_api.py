@@ -21,6 +21,8 @@ from openapi_client.model_utils import (  # noqa: F401
     none_type,
     validate_and_convert_types
 )
+from openapi_client.model.evaluate_model_request import EvaluateModelRequest
+from openapi_client.model.evaluate_model_response import EvaluateModelResponse
 from openapi_client.model.find_stock_analysis_response import FindStockAnalysisResponse
 from openapi_client.model.stock_analysis2 import StockAnalysis2
 
@@ -149,6 +151,124 @@ class StockAnalysisControllerApi(object):
             },
             api_client=api_client,
             callable=__delete_stock_analysis
+        )
+
+        def __evaluate_stock_analysis(
+            self,
+            evaluate_model_request,
+            **kwargs
+        ):
+            """evaluate_stock_analysis  # noqa: E501
+
+                     This API evaluates a model you've assembled and return a stock analysis object                   The passed in Model represents high level relationship between the various financial statement items of underlying a stock          Calling this method evaluates those relationships and turn them into real numbers                  This API does not persist (save) the stock analysis. Please call the stock analysis service API to save the analysis                  This is a stateless calculator           # noqa: E501
+            This method makes a synchronous HTTP request by default. To make an
+            asynchronous HTTP request, please pass async_req=True
+
+            >>> thread = api.evaluate_stock_analysis(evaluate_model_request, async_req=True)
+            >>> result = thread.get()
+
+            Args:
+                evaluate_model_request (EvaluateModelRequest):
+
+            Keyword Args:
+                _return_http_data_only (bool): response data without head status
+                    code and headers. Default is True.
+                _preload_content (bool): if False, the urllib3.HTTPResponse object
+                    will be returned without reading/decoding response data.
+                    Default is True.
+                _request_timeout (float/tuple): timeout setting for this request. If one
+                    number provided, it will be total request timeout. It can also
+                    be a pair (tuple) of (connection, read) timeouts.
+                    Default is None.
+                _check_input_type (bool): specifies if type checking
+                    should be done one the data sent to the server.
+                    Default is True.
+                _check_return_type (bool): specifies if type checking
+                    should be done one the data received from the server.
+                    Default is True.
+                _host_index (int/None): specifies the index of the server
+                    that we want to use.
+                    Default is read from the configuration.
+                async_req (bool): execute request asynchronously
+
+            Returns:
+                EvaluateModelResponse
+                    If the method is called asynchronously, returns the request
+                    thread.
+            """
+            kwargs['async_req'] = kwargs.get(
+                'async_req', False
+            )
+            kwargs['_return_http_data_only'] = kwargs.get(
+                '_return_http_data_only', True
+            )
+            kwargs['_preload_content'] = kwargs.get(
+                '_preload_content', True
+            )
+            kwargs['_request_timeout'] = kwargs.get(
+                '_request_timeout', None
+            )
+            kwargs['_check_input_type'] = kwargs.get(
+                '_check_input_type', True
+            )
+            kwargs['_check_return_type'] = kwargs.get(
+                '_check_return_type', True
+            )
+            kwargs['_host_index'] = kwargs.get('_host_index')
+            kwargs['evaluate_model_request'] = \
+                evaluate_model_request
+            return self.call_with_http_info(**kwargs)
+
+        self.evaluate_stock_analysis = _Endpoint(
+            settings={
+                'response_type': (EvaluateModelResponse,),
+                'auth': [],
+                'endpoint_path': '/api/stock-analyzer/stock-analyses/evaluate',
+                'operation_id': 'evaluate_stock_analysis',
+                'http_method': 'POST',
+                'servers': None,
+            },
+            params_map={
+                'all': [
+                    'evaluate_model_request',
+                ],
+                'required': [
+                    'evaluate_model_request',
+                ],
+                'nullable': [
+                ],
+                'enum': [
+                ],
+                'validation': [
+                ]
+            },
+            root_map={
+                'validations': {
+                },
+                'allowed_values': {
+                },
+                'openapi_types': {
+                    'evaluate_model_request':
+                        (EvaluateModelRequest,),
+                },
+                'attribute_map': {
+                },
+                'location_map': {
+                    'evaluate_model_request': 'body',
+                },
+                'collection_format_map': {
+                }
+            },
+            headers_map={
+                'accept': [
+                    '*/*'
+                ],
+                'content_type': [
+                    'application/json'
+                ]
+            },
+            api_client=api_client,
+            callable=__evaluate_stock_analysis
         )
 
         def __find_stock_analyses(
@@ -527,6 +647,124 @@ class StockAnalysisControllerApi(object):
             },
             api_client=api_client,
             callable=__publish
+        )
+
+        def __refresh_stock_analysis(
+            self,
+            stock_analysis2,
+            **kwargs
+        ):
+            """refresh_stock_analysis  # noqa: E501
+
+                     This API refreshes an existing stock analysis and re-evaluate         the model attached to it to produce renewed outputs. Call this API          when you are in possession of a previously run stock analysis                  The returned refreshed stock analysis preserve all the metadata, model overrides         of the original analysis                  This API does not persist (save) the new analysis. This API is a stateless calculator           # noqa: E501
+            This method makes a synchronous HTTP request by default. To make an
+            asynchronous HTTP request, please pass async_req=True
+
+            >>> thread = api.refresh_stock_analysis(stock_analysis2, async_req=True)
+            >>> result = thread.get()
+
+            Args:
+                stock_analysis2 (StockAnalysis2):
+
+            Keyword Args:
+                _return_http_data_only (bool): response data without head status
+                    code and headers. Default is True.
+                _preload_content (bool): if False, the urllib3.HTTPResponse object
+                    will be returned without reading/decoding response data.
+                    Default is True.
+                _request_timeout (float/tuple): timeout setting for this request. If one
+                    number provided, it will be total request timeout. It can also
+                    be a pair (tuple) of (connection, read) timeouts.
+                    Default is None.
+                _check_input_type (bool): specifies if type checking
+                    should be done one the data sent to the server.
+                    Default is True.
+                _check_return_type (bool): specifies if type checking
+                    should be done one the data received from the server.
+                    Default is True.
+                _host_index (int/None): specifies the index of the server
+                    that we want to use.
+                    Default is read from the configuration.
+                async_req (bool): execute request asynchronously
+
+            Returns:
+                StockAnalysis2
+                    If the method is called asynchronously, returns the request
+                    thread.
+            """
+            kwargs['async_req'] = kwargs.get(
+                'async_req', False
+            )
+            kwargs['_return_http_data_only'] = kwargs.get(
+                '_return_http_data_only', True
+            )
+            kwargs['_preload_content'] = kwargs.get(
+                '_preload_content', True
+            )
+            kwargs['_request_timeout'] = kwargs.get(
+                '_request_timeout', None
+            )
+            kwargs['_check_input_type'] = kwargs.get(
+                '_check_input_type', True
+            )
+            kwargs['_check_return_type'] = kwargs.get(
+                '_check_return_type', True
+            )
+            kwargs['_host_index'] = kwargs.get('_host_index')
+            kwargs['stock_analysis2'] = \
+                stock_analysis2
+            return self.call_with_http_info(**kwargs)
+
+        self.refresh_stock_analysis = _Endpoint(
+            settings={
+                'response_type': (StockAnalysis2,),
+                'auth': [],
+                'endpoint_path': '/api/stock-analyzer/stock-analyses/refresh',
+                'operation_id': 'refresh_stock_analysis',
+                'http_method': 'POST',
+                'servers': None,
+            },
+            params_map={
+                'all': [
+                    'stock_analysis2',
+                ],
+                'required': [
+                    'stock_analysis2',
+                ],
+                'nullable': [
+                ],
+                'enum': [
+                ],
+                'validation': [
+                ]
+            },
+            root_map={
+                'validations': {
+                },
+                'allowed_values': {
+                },
+                'openapi_types': {
+                    'stock_analysis2':
+                        (StockAnalysis2,),
+                },
+                'attribute_map': {
+                },
+                'location_map': {
+                    'stock_analysis2': 'body',
+                },
+                'collection_format_map': {
+                }
+            },
+            headers_map={
+                'accept': [
+                    '*/*'
+                ],
+                'content_type': [
+                    'application/json'
+                ]
+            },
+            api_client=api_client,
+            callable=__refresh_stock_analysis
         )
 
         def __save_stock_analysis(

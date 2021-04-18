@@ -22,8 +22,6 @@ Name | Type | Description | Notes
 **total_revenue_concept_name** | **str** |  | [optional] 
 **eps_concept_name** | **str** |  | [optional] 
 **net_income_concept_name** | **str** |  | [optional] 
-**ebit_concept_name** | **str** |  | [optional] 
-**operating_cost_concept_name** | **str** |  | [optional] 
 **shares_outstanding_concept_name** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

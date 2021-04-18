@@ -23,6 +23,7 @@ from openapi_client.model.edgar_entity import EdgarEntity
 from openapi_client.model.edgar_entity_source import EdgarEntitySource
 from openapi_client.model.edgar_filing_metadata import EdgarFilingMetadata
 from openapi_client.model.evaluate_model_request import EvaluateModelRequest
+from openapi_client.model.evaluate_model_response import EvaluateModelResponse
 from openapi_client.model.fact import Fact
 from openapi_client.model.feedback import Feedback
 from openapi_client.model.filing_entity import FilingEntity

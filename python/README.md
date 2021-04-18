@@ -99,19 +99,18 @@ Class | Method | HTTP request | Description
 *MarketingControllerApi* | [**feedback20210329**](docs/MarketingControllerApi.md#feedback20210329) | **POST** /public/marketing/2021-03-29/feedback | 
 *MarketingControllerApi* | [**stock_analysis_interest**](docs/MarketingControllerApi.md#stock_analysis_interest) | **POST** /public/marketing/stock-analysis-interest | 
 *MarketingControllerApi* | [**stock_analysis_request**](docs/MarketingControllerApi.md#stock_analysis_request) | **POST** /public/marketing/stock-analysis-request | 
-*MxParserControllerApi* | [**evaluate1**](docs/MxParserControllerApi.md#evaluate1) | **POST** /api/mxparser | 
+*MxParserControllerApi* | [**evaluate**](docs/MxParserControllerApi.md#evaluate) | **POST** /api/mxparser | 
 *PublishedStockAnalysisControllerApi* | [**find_published_stock_analyses**](docs/PublishedStockAnalysisControllerApi.md#find_published_stock_analyses) | **GET** /public/published-stock-analyses | 
 *PublishedStockAnalysisControllerApi* | [**get_published_stock_analysis**](docs/PublishedStockAnalysisControllerApi.md#get_published_stock_analysis) | **GET** /public/published-stock-analyses/{id} | 
 *StockAnalysisControllerApi* | [**delete_stock_analysis**](docs/StockAnalysisControllerApi.md#delete_stock_analysis) | **DELETE** /api/stock-analyzer/stock-analyses/{id} | 
+*StockAnalysisControllerApi* | [**evaluate_stock_analysis**](docs/StockAnalysisControllerApi.md#evaluate_stock_analysis) | **POST** /api/stock-analyzer/stock-analyses/evaluate | 
 *StockAnalysisControllerApi* | [**find_stock_analyses**](docs/StockAnalysisControllerApi.md#find_stock_analyses) | **GET** /api/stock-analyzer/stock-analyses | 
 *StockAnalysisControllerApi* | [**get_stock_analysis**](docs/StockAnalysisControllerApi.md#get_stock_analysis) | **GET** /api/stock-analyzer/stock-analyses/{id} | 
 *StockAnalysisControllerApi* | [**publish**](docs/StockAnalysisControllerApi.md#publish) | **POST** /api/stock-analyzer/stock-analyses/{id}/publish | 
+*StockAnalysisControllerApi* | [**refresh_stock_analysis**](docs/StockAnalysisControllerApi.md#refresh_stock_analysis) | **POST** /api/stock-analyzer/stock-analyses/refresh | 
 *StockAnalysisControllerApi* | [**save_stock_analysis**](docs/StockAnalysisControllerApi.md#save_stock_analysis) | **POST** /api/stock-analyzer/stock-analyses | 
 *StockAnalysisControllerApi* | [**unpublish**](docs/StockAnalysisControllerApi.md#unpublish) | **POST** /api/stock-analyzer/stock-analyses/{id}/unpublish | 
-*StockAnalysisWorkflowControllerApi* | [**create**](docs/StockAnalysisWorkflowControllerApi.md#create) | **GET** /api/stock-analyzer/workflow/{cik} | 
-*StockAnalysisWorkflowControllerApi* | [**evaluate**](docs/StockAnalysisWorkflowControllerApi.md#evaluate) | **POST** /api/stock-analyzer/workflow/evaluate | 
-*StockAnalysisWorkflowControllerApi* | [**refresh**](docs/StockAnalysisWorkflowControllerApi.md#refresh) | **POST** /api/stock-analyzer/workflow/refresh | 
-*StockAnalysisWorkflowDownloadControllerApi* | [**download**](docs/StockAnalysisWorkflowDownloadControllerApi.md#download) | **GET** /api/stock-analyzer/workflow/{id}/download | 
+*StockAnalysisExcelDownloaderControllerApi* | [**download**](docs/StockAnalysisExcelDownloaderControllerApi.md#download) | **GET** /api/stock-analyzer/workflow/{id}/download | 
 
 
 ## Documentation For Models
@@ -130,6 +129,7 @@ Class | Method | HTTP request | Description
  - [EdgarEntitySource](docs/EdgarEntitySource.md)
  - [EdgarFilingMetadata](docs/EdgarFilingMetadata.md)
  - [EvaluateModelRequest](docs/EvaluateModelRequest.md)
+ - [EvaluateModelResponse](docs/EvaluateModelResponse.md)
  - [Fact](docs/Fact.md)
  - [Feedback](docs/Feedback.md)
  - [FilingEntity](docs/FilingEntity.md)

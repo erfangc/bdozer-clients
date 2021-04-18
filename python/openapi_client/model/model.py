@@ -95,8 +95,6 @@ class Model(ModelNormal):
             'total_revenue_concept_name': (str,),  # noqa: E501
             'eps_concept_name': (str,),  # noqa: E501
             'net_income_concept_name': (str,),  # noqa: E501
-            'ebit_concept_name': (str,),  # noqa: E501
-            'operating_cost_concept_name': (str,),  # noqa: E501
             'shares_outstanding_concept_name': (str,),  # noqa: E501
         }
 
@@ -124,8 +122,6 @@ class Model(ModelNormal):
         'total_revenue_concept_name': 'totalRevenueConceptName',  # noqa: E501
         'eps_concept_name': 'epsConceptName',  # noqa: E501
         'net_income_concept_name': 'netIncomeConceptName',  # noqa: E501
-        'ebit_concept_name': 'ebitConceptName',  # noqa: E501
-        'operating_cost_concept_name': 'operatingCostConceptName',  # noqa: E501
         'shares_outstanding_concept_name': 'sharesOutstandingConceptName',  # noqa: E501
     }
 
@@ -195,8 +191,6 @@ class Model(ModelNormal):
             total_revenue_concept_name (str): [optional]  # noqa: E501
             eps_concept_name (str): [optional]  # noqa: E501
             net_income_concept_name (str): [optional]  # noqa: E501
-            ebit_concept_name (str): [optional]  # noqa: E501
-            operating_cost_concept_name (str): [optional]  # noqa: E501
             shares_outstanding_concept_name (str): [optional]  # noqa: E501
         """
 

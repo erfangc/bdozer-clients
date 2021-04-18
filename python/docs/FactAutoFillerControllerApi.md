@@ -105,8 +105,6 @@ with openapi_client.ApiClient() as api_client:
         total_revenue_concept_name="total_revenue_concept_name_example",
         eps_concept_name="eps_concept_name_example",
         net_income_concept_name="net_income_concept_name_example",
-        ebit_concept_name="ebit_concept_name_example",
-        operating_cost_concept_name="operating_cost_concept_name_example",
         shares_outstanding_concept_name="shares_outstanding_concept_name_example",
         income_statement_items=[
             Item(
@@ -471,8 +469,6 @@ with openapi_client.ApiClient() as api_client:
         total_revenue_concept_name="total_revenue_concept_name_example",
         eps_concept_name="eps_concept_name_example",
         net_income_concept_name="net_income_concept_name_example",
-        ebit_concept_name="ebit_concept_name_example",
-        operating_cost_concept_name="operating_cost_concept_name_example",
         shares_outstanding_concept_name="shares_outstanding_concept_name_example",
         income_statement_items=[
             Item(
