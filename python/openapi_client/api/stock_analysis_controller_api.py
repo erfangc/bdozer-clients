@@ -292,6 +292,7 @@ class StockAnalysisControllerApi(object):
                 skip (int): [optional]
                 limit (int): [optional]
                 term (str): [optional]
+                tags ([str]): [optional]
                 _return_http_data_only (bool): response data without head status
                     code and headers. Default is True.
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -356,6 +357,7 @@ class StockAnalysisControllerApi(object):
                     'skip',
                     'limit',
                     'term',
+                    'tags',
                 ],
                 'required': [],
                 'nullable': [
@@ -385,6 +387,8 @@ class StockAnalysisControllerApi(object):
                         (int,),
                     'term':
                         (str,),
+                    'tags':
+                        ([str],),
                 },
                 'attribute_map': {
                     'published': 'published',
@@ -394,6 +398,7 @@ class StockAnalysisControllerApi(object):
                     'skip': 'skip',
                     'limit': 'limit',
                     'term': 'term',
+                    'tags': 'tags',
                 },
                 'location_map': {
                     'published': 'query',
@@ -403,8 +408,10 @@ class StockAnalysisControllerApi(object):
                     'skip': 'query',
                     'limit': 'query',
                     'term': 'query',
+                    'tags': 'query',
                 },
                 'collection_format_map': {
+                    'tags': 'multi',
                 }
             },
             headers_map={

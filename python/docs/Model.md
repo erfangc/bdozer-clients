@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **ticker** | **str** |  | [optional] 
 **cik** | **str** |  | [optional] 
 **adsh** | **str** |  | [optional] 
+**name** | **str** |  | [optional] 
 **total_revenue_concept_name** | **str** |  | [optional] 
 **eps_concept_name** | **str** |  | [optional] 
 **net_income_concept_name** | **str** |  | [optional] 

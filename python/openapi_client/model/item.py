@@ -120,8 +120,6 @@ class Item(ModelNormal):
             'percent_of_revenue': (PercentOfRevenue,),  # noqa: E501
             'compounded_growth': (CompoundedGrowth,),  # noqa: E501
             'fixed_cost': (FixedCost,),  # noqa: E501
-            'stock_based_compensation': (bool,),  # noqa: E501
-            'non_cash_expense': (bool,),  # noqa: E501
             'commentaries': (Commentary,),  # noqa: E501
         }
 
@@ -145,8 +143,6 @@ class Item(ModelNormal):
         'percent_of_revenue': 'percentOfRevenue',  # noqa: E501
         'compounded_growth': 'compoundedGrowth',  # noqa: E501
         'fixed_cost': 'fixedCost',  # noqa: E501
-        'stock_based_compensation': 'stockBasedCompensation',  # noqa: E501
-        'non_cash_expense': 'nonCashExpense',  # noqa: E501
         'commentaries': 'commentaries',  # noqa: E501
     }
 
@@ -212,8 +208,6 @@ class Item(ModelNormal):
             percent_of_revenue (PercentOfRevenue): [optional]  # noqa: E501
             compounded_growth (CompoundedGrowth): [optional]  # noqa: E501
             fixed_cost (FixedCost): [optional]  # noqa: E501
-            stock_based_compensation (bool): [optional]  # noqa: E501
-            non_cash_expense (bool): [optional]  # noqa: E501
             commentaries (Commentary): [optional]  # noqa: E501
         """
 

@@ -95,10 +95,15 @@ Class | Method | HTTP request | Description
 *FilingEntityManagerControllerApi* | [**create_filing_entity**](docs/FilingEntityManagerControllerApi.md#create_filing_entity) | **POST** /api/filing-entity-manager/{cik}/create | 
 *FilingEntityManagerControllerApi* | [**save_filing_entity**](docs/FilingEntityManagerControllerApi.md#save_filing_entity) | **POST** /api/filing-entity-manager | 
 *FilingEntityManagerUnsecuredControllerApi* | [**get_filing_entity**](docs/FilingEntityManagerUnsecuredControllerApi.md#get_filing_entity) | **GET** /public/filing-entity-manager/{cik} | 
+*IssuesControllerApi* | [**delete_issue**](docs/IssuesControllerApi.md#delete_issue) | **DELETE** /api/issues/{id} | 
+*IssuesControllerApi* | [**find_issues**](docs/IssuesControllerApi.md#find_issues) | **GET** /api/issues | 
+*IssuesControllerApi* | [**generate_issues**](docs/IssuesControllerApi.md#generate_issues) | **POST** /api/issues/generate-issues | 
+*IssuesControllerApi* | [**save_issues**](docs/IssuesControllerApi.md#save_issues) | **POST** /api/issues | 
 *MarketingControllerApi* | [**early_access_requests**](docs/MarketingControllerApi.md#early_access_requests) | **POST** /public/marketing/early-access-requests | 
 *MarketingControllerApi* | [**feedback20210329**](docs/MarketingControllerApi.md#feedback20210329) | **POST** /public/marketing/2021-03-29/feedback | 
 *MarketingControllerApi* | [**stock_analysis_interest**](docs/MarketingControllerApi.md#stock_analysis_interest) | **POST** /public/marketing/stock-analysis-interest | 
 *MarketingControllerApi* | [**stock_analysis_request**](docs/MarketingControllerApi.md#stock_analysis_request) | **POST** /public/marketing/stock-analysis-request | 
+*ModelBuilderFactoryControllerApi* | [**best_effort_model**](docs/ModelBuilderFactoryControllerApi.md#best_effort_model) | **GET** /api/sec/model-builder-factory | 
 *MxParserControllerApi* | [**evaluate**](docs/MxParserControllerApi.md#evaluate) | **POST** /api/mxparser | 
 *PublishedStockAnalysisControllerApi* | [**find_published_stock_analyses**](docs/PublishedStockAnalysisControllerApi.md#find_published_stock_analyses) | **GET** /public/published-stock-analyses | 
 *PublishedStockAnalysisControllerApi* | [**get_published_stock_analysis**](docs/PublishedStockAnalysisControllerApi.md#get_published_stock_analysis) | **GET** /public/published-stock-analyses/{id} | 
@@ -111,6 +116,9 @@ Class | Method | HTTP request | Description
 *StockAnalysisControllerApi* | [**save_stock_analysis**](docs/StockAnalysisControllerApi.md#save_stock_analysis) | **POST** /api/stock-analyzer/stock-analyses | 
 *StockAnalysisControllerApi* | [**unpublish**](docs/StockAnalysisControllerApi.md#unpublish) | **POST** /api/stock-analyzer/stock-analyses/{id}/unpublish | 
 *StockAnalysisExcelDownloaderControllerApi* | [**download**](docs/StockAnalysisExcelDownloaderControllerApi.md#download) | **GET** /api/stock-analyzer/workflow/{id}/download | 
+*TagControllerApi* | [**delete_tag**](docs/TagControllerApi.md#delete_tag) | **DELETE** /api/tags/{id} | 
+*TagControllerApi* | [**find_tag**](docs/TagControllerApi.md#find_tag) | **GET** /api/tags | 
+*TagControllerApi* | [**save_tag**](docs/TagControllerApi.md#save_tag) | **POST** /api/tags | 
 
 
 ## Documentation For Models
@@ -137,6 +145,7 @@ Class | Method | HTTP request | Description
  - [FixedCost](docs/FixedCost.md)
  - [FixedCostAutoFill](docs/FixedCostAutoFill.md)
  - [HistoricalValue](docs/HistoricalValue.md)
+ - [Issue](docs/Issue.md)
  - [Item](docs/Item.md)
  - [Model](docs/Model.md)
  - [ModelTemplate](docs/ModelTemplate.md)
@@ -147,9 +156,11 @@ Class | Method | HTTP request | Description
  - [PercentOfTotalAsset](docs/PercentOfTotalAsset.md)
  - [StockAnalysis2](docs/StockAnalysis2.md)
  - [StockAnalysisInterest](docs/StockAnalysisInterest.md)
+ - [StockAnalysisProjection](docs/StockAnalysisProjection.md)
  - [StockAnalysisRequest](docs/StockAnalysisRequest.md)
  - [SubscriptionRevenue](docs/SubscriptionRevenue.md)
  - [SumOfOtherItems](docs/SumOfOtherItems.md)
+ - [Tag](docs/Tag.md)
  - [UnitSalesRevenue](docs/UnitSalesRevenue.md)
  - [Waterfall](docs/Waterfall.md)
  - [XbrlExplicitMember](docs/XbrlExplicitMember.md)

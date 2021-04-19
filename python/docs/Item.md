@@ -18,8 +18,6 @@ Name | Type | Description | Notes
 **percent_of_revenue** | [**PercentOfRevenue**](PercentOfRevenue.md) |  | [optional] 
 **compounded_growth** | [**CompoundedGrowth**](CompoundedGrowth.md) |  | [optional] 
 **fixed_cost** | [**FixedCost**](FixedCost.md) |  | [optional] 
-**stock_based_compensation** | **bool** |  | [optional] 
-**non_cash_expense** | **bool** |  | [optional] 
 **commentaries** | [**Commentary**](Commentary.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

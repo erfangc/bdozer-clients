@@ -27,8 +27,8 @@ from openapi_client.model_utils import (  # noqa: F401
 )
 
 def lazy_import():
-    from openapi_client.model.stock_analysis2 import StockAnalysis2
-    globals()['StockAnalysis2'] = StockAnalysis2
+    from openapi_client.model.stock_analysis_projection import StockAnalysisProjection
+    globals()['StockAnalysisProjection'] = StockAnalysisProjection
 
 
 class FindStockAnalysisResponse(ModelNormal):
@@ -78,7 +78,7 @@ class FindStockAnalysisResponse(ModelNormal):
         lazy_import()
         return {
             'total_count': (int,),  # noqa: E501
-            'stock_analyses': ([StockAnalysis2],),  # noqa: E501
+            'stock_analyses': ([StockAnalysisProjection],),  # noqa: E501
         }
 
     @cached_property
@@ -108,7 +108,7 @@ class FindStockAnalysisResponse(ModelNormal):
 
         Args:
             total_count (int):
-            stock_analyses ([StockAnalysis2]):
+            stock_analyses ([StockAnalysisProjection]):
 
         Keyword Args:
             _check_type (bool): if True, values for parameters in openapi_types

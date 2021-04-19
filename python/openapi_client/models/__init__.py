@@ -31,6 +31,7 @@ from openapi_client.model.find_stock_analysis_response import FindStockAnalysisR
 from openapi_client.model.fixed_cost import FixedCost
 from openapi_client.model.fixed_cost_auto_fill import FixedCostAutoFill
 from openapi_client.model.historical_value import HistoricalValue
+from openapi_client.model.issue import Issue
 from openapi_client.model.item import Item
 from openapi_client.model.model import Model
 from openapi_client.model.model_template import ModelTemplate
@@ -41,9 +42,11 @@ from openapi_client.model.percent_of_revenue_auto_fill import PercentOfRevenueAu
 from openapi_client.model.percent_of_total_asset import PercentOfTotalAsset
 from openapi_client.model.stock_analysis2 import StockAnalysis2
 from openapi_client.model.stock_analysis_interest import StockAnalysisInterest
+from openapi_client.model.stock_analysis_projection import StockAnalysisProjection
 from openapi_client.model.stock_analysis_request import StockAnalysisRequest
 from openapi_client.model.subscription_revenue import SubscriptionRevenue
 from openapi_client.model.sum_of_other_items import SumOfOtherItems
+from openapi_client.model.tag import Tag
 from openapi_client.model.unit_sales_revenue import UnitSalesRevenue
 from openapi_client.model.waterfall import Waterfall
 from openapi_client.model.xbrl_explicit_member import XbrlExplicitMember

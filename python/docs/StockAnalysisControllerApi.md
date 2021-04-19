@@ -106,6 +106,7 @@ with openapi_client.ApiClient() as api_client:
             ticker="ticker_example",
             cik="cik_example",
             adsh="adsh_example",
+            name="name_example",
             item_overrides=[
                 Item(
                     name="name_example",
@@ -161,8 +162,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -220,8 +219,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -275,8 +272,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -330,8 +325,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -385,8 +378,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -471,11 +462,14 @@ with openapi_client.ApiClient() as api_client:
     skip = 1 # int |  (optional)
     limit = 1 # int |  (optional)
     term = "term_example" # str |  (optional)
+    tags = [
+        "tags_example",
+    ] # [str] |  (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.find_stock_analyses(published=published, user_id=user_id, cik=cik, ticker=ticker, skip=skip, limit=limit, term=term)
+        api_response = api_instance.find_stock_analyses(published=published, user_id=user_id, cik=cik, ticker=ticker, skip=skip, limit=limit, term=term, tags=tags)
         pprint(api_response)
     except openapi_client.ApiException as e:
         print("Exception when calling StockAnalysisControllerApi->find_stock_analyses: %s\n" % e)
@@ -493,6 +487,7 @@ Name | Type | Description  | Notes
  **skip** | **int**|  | [optional]
  **limit** | **int**|  | [optional]
  **term** | **str**|  | [optional]
+ **tags** | **[str]**|  | [optional]
 
 ### Return type
 
@@ -675,6 +670,7 @@ with openapi_client.ApiClient() as api_client:
             ticker="ticker_example",
             cik="cik_example",
             adsh="adsh_example",
+            name="name_example",
             item_overrides=[
                 Item(
                     name="name_example",
@@ -730,8 +726,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -789,8 +783,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -844,8 +836,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -899,8 +889,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -954,8 +942,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -1020,8 +1006,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -1095,8 +1079,6 @@ with openapi_client.ApiClient() as api_client:
                             fixed_cost=FixedCost(
                                 cost=3.14,
                             ),
-                            stock_based_compensation=True,
-                            non_cash_expense=True,
                             commentaries=Commentary(
                                 commentary="commentary_example",
                                 generator_class="generator_class_example",
@@ -1164,8 +1146,6 @@ with openapi_client.ApiClient() as api_client:
                                 fixed_cost=FixedCost(
                                     cost=3.14,
                                 ),
-                                stock_based_compensation=True,
-                                non_cash_expense=True,
                                 commentaries=Commentary(
                                     commentary="commentary_example",
                                     generator_class="generator_class_example",
@@ -1233,8 +1213,6 @@ with openapi_client.ApiClient() as api_client:
                             fixed_cost=FixedCost(
                                 cost=3.14,
                             ),
-                            stock_based_compensation=True,
-                            non_cash_expense=True,
                             commentaries=Commentary(
                                 commentary="commentary_example",
                                 generator_class="generator_class_example",
@@ -1300,8 +1278,6 @@ with openapi_client.ApiClient() as api_client:
                 fixed_cost=FixedCost(
                     cost=3.14,
                 ),
-                stock_based_compensation=True,
-                non_cash_expense=True,
                 commentaries=Commentary(
                     commentary="commentary_example",
                     generator_class="generator_class_example",
@@ -1353,8 +1329,6 @@ with openapi_client.ApiClient() as api_client:
                 fixed_cost=FixedCost(
                     cost=3.14,
                 ),
-                stock_based_compensation=True,
-                non_cash_expense=True,
                 commentaries=Commentary(
                     commentary="commentary_example",
                     generator_class="generator_class_example",
@@ -1444,6 +1418,7 @@ with openapi_client.ApiClient() as api_client:
             ticker="ticker_example",
             cik="cik_example",
             adsh="adsh_example",
+            name="name_example",
             item_overrides=[
                 Item(
                     name="name_example",
@@ -1499,8 +1474,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -1558,8 +1531,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -1613,8 +1584,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -1668,8 +1637,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -1723,8 +1690,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -1789,8 +1754,6 @@ with openapi_client.ApiClient() as api_client:
                     fixed_cost=FixedCost(
                         cost=3.14,
                     ),
-                    stock_based_compensation=True,
-                    non_cash_expense=True,
                     commentaries=Commentary(
                         commentary="commentary_example",
                         generator_class="generator_class_example",
@@ -1864,8 +1827,6 @@ with openapi_client.ApiClient() as api_client:
                             fixed_cost=FixedCost(
                                 cost=3.14,
                             ),
-                            stock_based_compensation=True,
-                            non_cash_expense=True,
                             commentaries=Commentary(
                                 commentary="commentary_example",
                                 generator_class="generator_class_example",
@@ -1933,8 +1894,6 @@ with openapi_client.ApiClient() as api_client:
                                 fixed_cost=FixedCost(
                                     cost=3.14,
                                 ),
-                                stock_based_compensation=True,
-                                non_cash_expense=True,
                                 commentaries=Commentary(
                                     commentary="commentary_example",
                                     generator_class="generator_class_example",
@@ -2002,8 +1961,6 @@ with openapi_client.ApiClient() as api_client:
                             fixed_cost=FixedCost(
                                 cost=3.14,
                             ),
-                            stock_based_compensation=True,
-                            non_cash_expense=True,
                             commentaries=Commentary(
                                 commentary="commentary_example",
                                 generator_class="generator_class_example",
@@ -2069,8 +2026,6 @@ with openapi_client.ApiClient() as api_client:
                 fixed_cost=FixedCost(
                     cost=3.14,
                 ),
-                stock_based_compensation=True,
-                non_cash_expense=True,
                 commentaries=Commentary(
                     commentary="commentary_example",
                     generator_class="generator_class_example",
@@ -2122,8 +2077,6 @@ with openapi_client.ApiClient() as api_client:
                 fixed_cost=FixedCost(
                     cost=3.14,
                 ),
-                stock_based_compensation=True,
-                non_cash_expense=True,
                 commentaries=Commentary(
                     commentary="commentary_example",
                     generator_class="generator_class_example",

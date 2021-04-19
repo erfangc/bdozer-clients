@@ -38,11 +38,14 @@ with openapi_client.ApiClient() as api_client:
     skip = 1 # int |  (optional)
     limit = 1 # int |  (optional)
     term = "term_example" # str |  (optional)
+    tags = [
+        "tags_example",
+    ] # [str] |  (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.find_published_stock_analyses(user_id=user_id, cik=cik, ticker=ticker, skip=skip, limit=limit, term=term)
+        api_response = api_instance.find_published_stock_analyses(user_id=user_id, cik=cik, ticker=ticker, skip=skip, limit=limit, term=term, tags=tags)
         pprint(api_response)
     except openapi_client.ApiException as e:
         print("Exception when calling PublishedStockAnalysisControllerApi->find_published_stock_analyses: %s\n" % e)
@@ -59,6 +62,7 @@ Name | Type | Description  | Notes
  **skip** | **int**|  | [optional]
  **limit** | **int**|  | [optional]
  **term** | **str**|  | [optional]
+ **tags** | **[str]**|  | [optional]
 
 ### Return type
 
