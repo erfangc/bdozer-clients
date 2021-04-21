@@ -57,7 +57,6 @@ class Issue(ModelNormal):
             'NETINCOMEITEMNOTFOUND': "NetIncomeItemNotFound",
             'SHARESOUTSTANDINGITEMNOTFOUND': "SharesOutstandingItemNotFound",
             'EPSITEMNOTFOUND': "EpsItemNotFound",
-            'ORPHANITEM': "OrphanItem",
         },
     }
 

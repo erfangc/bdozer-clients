@@ -119,6 +119,7 @@ Class | Method | HTTP request | Description
 *TagControllerApi* | [**delete_tag**](docs/TagControllerApi.md#delete_tag) | **DELETE** /api/tags/{id} | 
 *TagControllerApi* | [**find_tag**](docs/TagControllerApi.md#find_tag) | **GET** /api/tags | 
 *TagControllerApi* | [**save_tag**](docs/TagControllerApi.md#save_tag) | **POST** /api/tags | 
+*ZacksEstimatesControllerApi* | [**revenue_projections**](docs/ZacksEstimatesControllerApi.md#revenue_projections) | **GET** /api/zacks-estimates/revenue-projections | 
 
 
 ## Documentation For Models
