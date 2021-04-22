@@ -37,6 +37,7 @@ from openapi_client.model.model import Model
 from openapi_client.model.model_template import ModelTemplate
 from openapi_client.model.mx_parser_evaluate_request import MxParserEvaluateRequest
 from openapi_client.model.mx_parser_evaluate_response import MxParserEvaluateResponse
+from openapi_client.model.percent_of_another_item import PercentOfAnotherItem
 from openapi_client.model.percent_of_revenue import PercentOfRevenue
 from openapi_client.model.percent_of_revenue_auto_fill import PercentOfRevenueAutoFill
 from openapi_client.model.percent_of_total_asset import PercentOfTotalAsset

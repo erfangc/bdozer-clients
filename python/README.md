@@ -153,6 +153,7 @@ Class | Method | HTTP request | Description
  - [ModelTemplate](docs/ModelTemplate.md)
  - [MxParserEvaluateRequest](docs/MxParserEvaluateRequest.md)
  - [MxParserEvaluateResponse](docs/MxParserEvaluateResponse.md)
+ - [PercentOfAnotherItem](docs/PercentOfAnotherItem.md)
  - [PercentOfRevenue](docs/PercentOfRevenue.md)
  - [PercentOfRevenueAutoFill](docs/PercentOfRevenueAutoFill.md)
  - [PercentOfTotalAsset](docs/PercentOfTotalAsset.md)

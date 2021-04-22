@@ -42,6 +42,7 @@ docs/MxParserControllerApi.md
 docs/MxParserEvaluateRequest.md
 docs/MxParserEvaluateResponse.md
 docs/OrphanedItemsFinderControllerApi.md
+docs/PercentOfAnotherItem.md
 docs/PercentOfRevenue.md
 docs/PercentOfRevenueAutoFill.md
 docs/PercentOfTotalAsset.md
@@ -112,6 +113,7 @@ openapi_client/model/model.py
 openapi_client/model/model_template.py
 openapi_client/model/mx_parser_evaluate_request.py
 openapi_client/model/mx_parser_evaluate_response.py
+openapi_client/model/percent_of_another_item.py
 openapi_client/model/percent_of_revenue.py
 openapi_client/model/percent_of_revenue_auto_fill.py
 openapi_client/model/percent_of_total_asset.py
@@ -133,4 +135,5 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_percent_of_another_item.py
 tox.ini

@@ -87,6 +87,10 @@ with openapi_client.ApiClient() as api_client:
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
                     ),
+                    percent_of_another_item=PercentOfAnotherItem(
+                        item_name="item_name_example",
+                        percent=3.14,
+                    ),
                     compounded_growth=CompoundedGrowth(
                         growth_rate=3.14,
                     ),
@@ -142,6 +146,10 @@ with openapi_client.ApiClient() as api_client:
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
                     ),
+                    percent_of_another_item=PercentOfAnotherItem(
+                        item_name="item_name_example",
+                        percent=3.14,
+                    ),
                     compounded_growth=CompoundedGrowth(
                         growth_rate=3.14,
                     ),
@@ -189,6 +197,10 @@ with openapi_client.ApiClient() as api_client:
                     ),
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
+                    ),
+                    percent_of_another_item=PercentOfAnotherItem(
+                        item_name="item_name_example",
+                        percent=3.14,
                     ),
                     compounded_growth=CompoundedGrowth(
                         growth_rate=3.14,
@@ -238,6 +250,10 @@ with openapi_client.ApiClient() as api_client:
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
                     ),
+                    percent_of_another_item=PercentOfAnotherItem(
+                        item_name="item_name_example",
+                        percent=3.14,
+                    ),
                     compounded_growth=CompoundedGrowth(
                         growth_rate=3.14,
                     ),
@@ -285,6 +301,10 @@ with openapi_client.ApiClient() as api_client:
                     ),
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
+                    ),
+                    percent_of_another_item=PercentOfAnotherItem(
+                        item_name="item_name_example",
+                        percent=3.14,
                     ),
                     compounded_growth=CompoundedGrowth(
                         growth_rate=3.14,
@@ -344,6 +364,10 @@ with openapi_client.ApiClient() as api_client:
                     ),
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
+                    ),
+                    percent_of_another_item=PercentOfAnotherItem(
+                        item_name="item_name_example",
+                        percent=3.14,
                     ),
                     compounded_growth=CompoundedGrowth(
                         growth_rate=3.14,
@@ -413,6 +437,10 @@ with openapi_client.ApiClient() as api_client:
                             percent_of_revenue=PercentOfRevenue(
                                 percent_of_revenue=3.14,
                             ),
+                            percent_of_another_item=PercentOfAnotherItem(
+                                item_name="item_name_example",
+                                percent=3.14,
+                            ),
                             compounded_growth=CompoundedGrowth(
                                 growth_rate=3.14,
                             ),
@@ -474,6 +502,10 @@ with openapi_client.ApiClient() as api_client:
                                 ),
                                 percent_of_revenue=PercentOfRevenue(
                                     percent_of_revenue=3.14,
+                                ),
+                                percent_of_another_item=PercentOfAnotherItem(
+                                    item_name="item_name_example",
+                                    percent=3.14,
                                 ),
                                 compounded_growth=CompoundedGrowth(
                                     growth_rate=3.14,
@@ -537,6 +569,10 @@ with openapi_client.ApiClient() as api_client:
                             percent_of_revenue=PercentOfRevenue(
                                 percent_of_revenue=3.14,
                             ),
+                            percent_of_another_item=PercentOfAnotherItem(
+                                item_name="item_name_example",
+                                percent=3.14,
+                            ),
                             compounded_growth=CompoundedGrowth(
                                 growth_rate=3.14,
                             ),
@@ -597,6 +633,10 @@ with openapi_client.ApiClient() as api_client:
                 percent_of_revenue=PercentOfRevenue(
                     percent_of_revenue=3.14,
                 ),
+                percent_of_another_item=PercentOfAnotherItem(
+                    item_name="item_name_example",
+                    percent=3.14,
+                ),
                 compounded_growth=CompoundedGrowth(
                     growth_rate=3.14,
                 ),
@@ -642,6 +682,10 @@ with openapi_client.ApiClient() as api_client:
                 ),
                 percent_of_revenue=PercentOfRevenue(
                     percent_of_revenue=3.14,
+                ),
+                percent_of_another_item=PercentOfAnotherItem(
+                    item_name="item_name_example",
+                    percent=3.14,
                 ),
                 compounded_growth=CompoundedGrowth(
                     growth_rate=3.14,
