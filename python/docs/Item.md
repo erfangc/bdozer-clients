@@ -11,7 +11,6 @@ Name | Type | Description | Notes
 **description** | **str** |  | [optional] 
 **historical_value** | [**HistoricalValue**](HistoricalValue.md) |  | [optional] 
 **sum_of_other_items** | [**SumOfOtherItems**](SumOfOtherItems.md) |  | [optional] 
-**subscription_revenue** | [**SubscriptionRevenue**](SubscriptionRevenue.md) |  | [optional] 
 **unit_sales_revenue** | [**UnitSalesRevenue**](UnitSalesRevenue.md) |  | [optional] 
 **discrete** | [**Discrete**](Discrete.md) |  | [optional] 
 **percent_of_total_asset** | [**PercentOfTotalAsset**](PercentOfTotalAsset.md) |  | [optional] 

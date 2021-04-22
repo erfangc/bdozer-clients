@@ -52,7 +52,6 @@ docs/StockAnalysisExcelDownloaderControllerApi.md
 docs/StockAnalysisInterest.md
 docs/StockAnalysisProjection.md
 docs/StockAnalysisRequest.md
-docs/SubscriptionRevenue.md
 docs/SumOfOtherItems.md
 docs/Tag.md
 docs/TagControllerApi.md
@@ -120,7 +119,6 @@ openapi_client/model/stock_analysis2.py
 openapi_client/model/stock_analysis_interest.py
 openapi_client/model/stock_analysis_projection.py
 openapi_client/model/stock_analysis_request.py
-openapi_client/model/subscription_revenue.py
 openapi_client/model/sum_of_other_items.py
 openapi_client/model/tag.py
 openapi_client/model/unit_sales_revenue.py

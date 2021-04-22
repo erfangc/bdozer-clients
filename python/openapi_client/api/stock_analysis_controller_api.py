@@ -661,7 +661,7 @@ class StockAnalysisControllerApi(object):
             stock_analysis2,
             **kwargs
         ):
-            """refresh_stock_analysis  # noqa: E501
+            """Refresh a stock analysis by rerunning the model  # noqa: E501
 
                      This API refreshes an existing stock analysis and re-evaluate         the model attached to it to produce renewed outputs. Call this API          when you are in possession of a previously run stock analysis                  The returned refreshed stock analysis preserve all the metadata, model overrides         of the original analysis                  This API does not persist (save) the new analysis. This API is a stateless calculator           # noqa: E501
             This method makes a synchronous HTTP request by default. To make an

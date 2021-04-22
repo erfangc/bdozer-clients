@@ -34,7 +34,6 @@ def lazy_import():
     from openapi_client.model.historical_value import HistoricalValue
     from openapi_client.model.percent_of_revenue import PercentOfRevenue
     from openapi_client.model.percent_of_total_asset import PercentOfTotalAsset
-    from openapi_client.model.subscription_revenue import SubscriptionRevenue
     from openapi_client.model.sum_of_other_items import SumOfOtherItems
     from openapi_client.model.unit_sales_revenue import UnitSalesRevenue
     globals()['Commentary'] = Commentary
@@ -44,7 +43,6 @@ def lazy_import():
     globals()['HistoricalValue'] = HistoricalValue
     globals()['PercentOfRevenue'] = PercentOfRevenue
     globals()['PercentOfTotalAsset'] = PercentOfTotalAsset
-    globals()['SubscriptionRevenue'] = SubscriptionRevenue
     globals()['SumOfOtherItems'] = SumOfOtherItems
     globals()['UnitSalesRevenue'] = UnitSalesRevenue
 
@@ -76,7 +74,6 @@ class Item(ModelNormal):
     allowed_values = {
         ('type',): {
             'DISCRETE': "Discrete",
-            'SUBSCRIPTIONREVENUE': "SubscriptionRevenue",
             'COMPOUNDEDGROWTH': "CompoundedGrowth",
             'SUMOFOTHERITEMS': "SumOfOtherItems",
             'UNITSALESREVENUE': "UnitSalesRevenue",
@@ -113,7 +110,6 @@ class Item(ModelNormal):
             'description': (str,),  # noqa: E501
             'historical_value': (HistoricalValue,),  # noqa: E501
             'sum_of_other_items': (SumOfOtherItems,),  # noqa: E501
-            'subscription_revenue': (SubscriptionRevenue,),  # noqa: E501
             'unit_sales_revenue': (UnitSalesRevenue,),  # noqa: E501
             'discrete': (Discrete,),  # noqa: E501
             'percent_of_total_asset': (PercentOfTotalAsset,),  # noqa: E501
@@ -136,7 +132,6 @@ class Item(ModelNormal):
         'description': 'description',  # noqa: E501
         'historical_value': 'historicalValue',  # noqa: E501
         'sum_of_other_items': 'sumOfOtherItems',  # noqa: E501
-        'subscription_revenue': 'subscriptionRevenue',  # noqa: E501
         'unit_sales_revenue': 'unitSalesRevenue',  # noqa: E501
         'discrete': 'discrete',  # noqa: E501
         'percent_of_total_asset': 'percentOfTotalAsset',  # noqa: E501
@@ -201,7 +196,6 @@ class Item(ModelNormal):
             description (str): [optional]  # noqa: E501
             historical_value (HistoricalValue): [optional]  # noqa: E501
             sum_of_other_items (SumOfOtherItems): [optional]  # noqa: E501
-            subscription_revenue (SubscriptionRevenue): [optional]  # noqa: E501
             unit_sales_revenue (UnitSalesRevenue): [optional]  # noqa: E501
             discrete (Discrete): [optional]  # noqa: E501
             percent_of_total_asset (PercentOfTotalAsset): [optional]  # noqa: E501

@@ -44,7 +44,6 @@ from openapi_client.model.stock_analysis2 import StockAnalysis2
 from openapi_client.model.stock_analysis_interest import StockAnalysisInterest
 from openapi_client.model.stock_analysis_projection import StockAnalysisProjection
 from openapi_client.model.stock_analysis_request import StockAnalysisRequest
-from openapi_client.model.subscription_revenue import SubscriptionRevenue
 from openapi_client.model.sum_of_other_items import SumOfOtherItems
 from openapi_client.model.tag import Tag
 from openapi_client.model.unit_sales_revenue import UnitSalesRevenue

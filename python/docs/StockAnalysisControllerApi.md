@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**find_stock_analyses**](StockAnalysisControllerApi.md#find_stock_analyses) | **GET** /api/stock-analyzer/stock-analyses | 
 [**get_stock_analysis**](StockAnalysisControllerApi.md#get_stock_analysis) | **GET** /api/stock-analyzer/stock-analyses/{id} | 
 [**publish**](StockAnalysisControllerApi.md#publish) | **POST** /api/stock-analyzer/stock-analyses/{id}/publish | 
-[**refresh_stock_analysis**](StockAnalysisControllerApi.md#refresh_stock_analysis) | **POST** /api/stock-analyzer/stock-analyses/refresh | 
+[**refresh_stock_analysis**](StockAnalysisControllerApi.md#refresh_stock_analysis) | **POST** /api/stock-analyzer/stock-analyses/refresh | Refresh a stock analysis by rerunning the model
 [**save_stock_analysis**](StockAnalysisControllerApi.md#save_stock_analysis) | **POST** /api/stock-analyzer/stock-analyses | 
 [**unpublish**](StockAnalysisControllerApi.md#unpublish) | **POST** /api/stock-analyzer/stock-analyses/{id}/unpublish | 
 
@@ -135,11 +135,6 @@ with openapi_client.ApiClient() as api_client:
                             ),
                         ],
                     ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
-                    ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
                         average_selling_price=3.14,
@@ -197,11 +192,6 @@ with openapi_client.ApiClient() as api_client:
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
                     ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
-                    ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
                         average_selling_price=3.14,
@@ -249,11 +239,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
                     ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
@@ -303,11 +288,6 @@ with openapi_client.ApiClient() as api_client:
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
                     ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
-                    ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
                         average_selling_price=3.14,
@@ -355,11 +335,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
                     ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
@@ -640,7 +615,7 @@ No authorization required
 # **refresh_stock_analysis**
 > StockAnalysis2 refresh_stock_analysis(stock_analysis2)
 
-
+Refresh a stock analysis by rerunning the model
 
          This API refreshes an existing stock analysis and re-evaluate         the model attached to it to produce renewed outputs. Call this API          when you are in possession of a previously run stock analysis                  The returned refreshed stock analysis preserve all the metadata, model overrides         of the original analysis                  This API does not persist (save) the new analysis. This API is a stateless calculator         
 
@@ -702,11 +677,6 @@ with openapi_client.ApiClient() as api_client:
                             ),
                         ],
                     ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
-                    ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
                         average_selling_price=3.14,
@@ -764,11 +734,6 @@ with openapi_client.ApiClient() as api_client:
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
                     ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
-                    ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
                         average_selling_price=3.14,
@@ -816,11 +781,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
                     ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
@@ -870,11 +830,6 @@ with openapi_client.ApiClient() as api_client:
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
                     ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
-                    ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
                         average_selling_price=3.14,
@@ -922,11 +877,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
                     ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
@@ -986,11 +936,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
                     ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
@@ -1060,11 +1005,6 @@ with openapi_client.ApiClient() as api_client:
                             sum_of_other_items=SumOfOtherItems(
                                 components=[],
                             ),
-                            subscription_revenue=SubscriptionRevenue(
-                                total_subscription_at_terminal_year=3.14,
-                                initial_subscriptions=3.14,
-                                average_revenue_per_subscription=3.14,
-                            ),
                             unit_sales_revenue=UnitSalesRevenue(
                                 steady_state_units_sold=3.14,
                                 average_selling_price=3.14,
@@ -1126,11 +1066,6 @@ with openapi_client.ApiClient() as api_client:
                                 formula="formula_example",
                                 sum_of_other_items=SumOfOtherItems(
                                     components=[],
-                                ),
-                                subscription_revenue=SubscriptionRevenue(
-                                    total_subscription_at_terminal_year=3.14,
-                                    initial_subscriptions=3.14,
-                                    average_revenue_per_subscription=3.14,
                                 ),
                                 unit_sales_revenue=UnitSalesRevenue(
                                     steady_state_units_sold=3.14,
@@ -1194,11 +1129,6 @@ with openapi_client.ApiClient() as api_client:
                             sum_of_other_items=SumOfOtherItems(
                                 components=[],
                             ),
-                            subscription_revenue=SubscriptionRevenue(
-                                total_subscription_at_terminal_year=3.14,
-                                initial_subscriptions=3.14,
-                                average_revenue_per_subscription=3.14,
-                            ),
                             unit_sales_revenue=UnitSalesRevenue(
                                 steady_state_units_sold=3.14,
                                 average_selling_price=3.14,
@@ -1259,11 +1189,6 @@ with openapi_client.ApiClient() as api_client:
                 sum_of_other_items=SumOfOtherItems(
                     components=[],
                 ),
-                subscription_revenue=SubscriptionRevenue(
-                    total_subscription_at_terminal_year=3.14,
-                    initial_subscriptions=3.14,
-                    average_revenue_per_subscription=3.14,
-                ),
                 unit_sales_revenue=UnitSalesRevenue(
                     steady_state_units_sold=3.14,
                     average_selling_price=3.14,
@@ -1310,11 +1235,6 @@ with openapi_client.ApiClient() as api_client:
                 sum_of_other_items=SumOfOtherItems(
                     components=[],
                 ),
-                subscription_revenue=SubscriptionRevenue(
-                    total_subscription_at_terminal_year=3.14,
-                    initial_subscriptions=3.14,
-                    average_revenue_per_subscription=3.14,
-                ),
                 unit_sales_revenue=UnitSalesRevenue(
                     steady_state_units_sold=3.14,
                     average_selling_price=3.14,
@@ -1356,6 +1276,7 @@ with openapi_client.ApiClient() as api_client:
 
     # example passing only required values which don't have defaults set
     try:
+        # Refresh a stock analysis by rerunning the model
         api_response = api_instance.refresh_stock_analysis(stock_analysis2)
         pprint(api_response)
     except openapi_client.ApiException as e:
@@ -1453,11 +1374,6 @@ with openapi_client.ApiClient() as api_client:
                             ),
                         ],
                     ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
-                    ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
                         average_selling_price=3.14,
@@ -1515,11 +1431,6 @@ with openapi_client.ApiClient() as api_client:
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
                     ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
-                    ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
                         average_selling_price=3.14,
@@ -1567,11 +1478,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
                     ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
@@ -1621,11 +1527,6 @@ with openapi_client.ApiClient() as api_client:
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
                     ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
-                    ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
                         average_selling_price=3.14,
@@ -1673,11 +1574,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
                     ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
@@ -1737,11 +1633,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    subscription_revenue=SubscriptionRevenue(
-                        total_subscription_at_terminal_year=3.14,
-                        initial_subscriptions=3.14,
-                        average_revenue_per_subscription=3.14,
                     ),
                     unit_sales_revenue=UnitSalesRevenue(
                         steady_state_units_sold=3.14,
@@ -1811,11 +1702,6 @@ with openapi_client.ApiClient() as api_client:
                             sum_of_other_items=SumOfOtherItems(
                                 components=[],
                             ),
-                            subscription_revenue=SubscriptionRevenue(
-                                total_subscription_at_terminal_year=3.14,
-                                initial_subscriptions=3.14,
-                                average_revenue_per_subscription=3.14,
-                            ),
                             unit_sales_revenue=UnitSalesRevenue(
                                 steady_state_units_sold=3.14,
                                 average_selling_price=3.14,
@@ -1877,11 +1763,6 @@ with openapi_client.ApiClient() as api_client:
                                 formula="formula_example",
                                 sum_of_other_items=SumOfOtherItems(
                                     components=[],
-                                ),
-                                subscription_revenue=SubscriptionRevenue(
-                                    total_subscription_at_terminal_year=3.14,
-                                    initial_subscriptions=3.14,
-                                    average_revenue_per_subscription=3.14,
                                 ),
                                 unit_sales_revenue=UnitSalesRevenue(
                                     steady_state_units_sold=3.14,
@@ -1945,11 +1826,6 @@ with openapi_client.ApiClient() as api_client:
                             sum_of_other_items=SumOfOtherItems(
                                 components=[],
                             ),
-                            subscription_revenue=SubscriptionRevenue(
-                                total_subscription_at_terminal_year=3.14,
-                                initial_subscriptions=3.14,
-                                average_revenue_per_subscription=3.14,
-                            ),
                             unit_sales_revenue=UnitSalesRevenue(
                                 steady_state_units_sold=3.14,
                                 average_selling_price=3.14,
@@ -2010,11 +1886,6 @@ with openapi_client.ApiClient() as api_client:
                 sum_of_other_items=SumOfOtherItems(
                     components=[],
                 ),
-                subscription_revenue=SubscriptionRevenue(
-                    total_subscription_at_terminal_year=3.14,
-                    initial_subscriptions=3.14,
-                    average_revenue_per_subscription=3.14,
-                ),
                 unit_sales_revenue=UnitSalesRevenue(
                     steady_state_units_sold=3.14,
                     average_selling_price=3.14,
@@ -2060,11 +1931,6 @@ with openapi_client.ApiClient() as api_client:
                 formula="formula_example",
                 sum_of_other_items=SumOfOtherItems(
                     components=[],
-                ),
-                subscription_revenue=SubscriptionRevenue(
-                    total_subscription_at_terminal_year=3.14,
-                    initial_subscriptions=3.14,
-                    average_revenue_per_subscription=3.14,
                 ),
                 unit_sales_revenue=UnitSalesRevenue(
                     steady_state_units_sold=3.14,

@@ -113,7 +113,7 @@ Class | Method | HTTP request | Description
 *StockAnalysisControllerApi* | [**find_stock_analyses**](docs/StockAnalysisControllerApi.md#find_stock_analyses) | **GET** /api/stock-analyzer/stock-analyses | 
 *StockAnalysisControllerApi* | [**get_stock_analysis**](docs/StockAnalysisControllerApi.md#get_stock_analysis) | **GET** /api/stock-analyzer/stock-analyses/{id} | 
 *StockAnalysisControllerApi* | [**publish**](docs/StockAnalysisControllerApi.md#publish) | **POST** /api/stock-analyzer/stock-analyses/{id}/publish | 
-*StockAnalysisControllerApi* | [**refresh_stock_analysis**](docs/StockAnalysisControllerApi.md#refresh_stock_analysis) | **POST** /api/stock-analyzer/stock-analyses/refresh | 
+*StockAnalysisControllerApi* | [**refresh_stock_analysis**](docs/StockAnalysisControllerApi.md#refresh_stock_analysis) | **POST** /api/stock-analyzer/stock-analyses/refresh | Refresh a stock analysis by rerunning the model
 *StockAnalysisControllerApi* | [**save_stock_analysis**](docs/StockAnalysisControllerApi.md#save_stock_analysis) | **POST** /api/stock-analyzer/stock-analyses | 
 *StockAnalysisControllerApi* | [**unpublish**](docs/StockAnalysisControllerApi.md#unpublish) | **POST** /api/stock-analyzer/stock-analyses/{id}/unpublish | 
 *StockAnalysisExcelDownloaderControllerApi* | [**download**](docs/StockAnalysisExcelDownloaderControllerApi.md#download) | **GET** /api/stock-analyzer/workflow/{id}/download | 
@@ -160,7 +160,6 @@ Class | Method | HTTP request | Description
  - [StockAnalysisInterest](docs/StockAnalysisInterest.md)
  - [StockAnalysisProjection](docs/StockAnalysisProjection.md)
  - [StockAnalysisRequest](docs/StockAnalysisRequest.md)
- - [SubscriptionRevenue](docs/SubscriptionRevenue.md)
  - [SumOfOtherItems](docs/SumOfOtherItems.md)
  - [Tag](docs/Tag.md)
  - [UnitSalesRevenue](docs/UnitSalesRevenue.md)
