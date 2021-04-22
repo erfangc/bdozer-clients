@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **item_overrides** | [**[Item]**](Item.md) |  | 
+**suppressed_items** | **[str]** |  | 
 **income_statement_items** | [**[Item]**](Item.md) |  | 
 **balance_sheet_items** | [**[Item]**](Item.md) |  | 
 **cash_flow_statement_items** | [**[Item]**](Item.md) |  | 

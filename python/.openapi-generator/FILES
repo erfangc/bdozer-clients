@@ -41,6 +41,7 @@ docs/ModelTemplate.md
 docs/MxParserControllerApi.md
 docs/MxParserEvaluateRequest.md
 docs/MxParserEvaluateResponse.md
+docs/OrphanedItemsFinderControllerApi.md
 docs/PercentOfRevenue.md
 docs/PercentOfRevenueAutoFill.md
 docs/PercentOfTotalAsset.md
@@ -73,6 +74,7 @@ openapi_client/api/issues_controller_api.py
 openapi_client/api/marketing_controller_api.py
 openapi_client/api/model_builder_factory_controller_api.py
 openapi_client/api/mx_parser_controller_api.py
+openapi_client/api/orphaned_items_finder_controller_api.py
 openapi_client/api/published_stock_analysis_controller_api.py
 openapi_client/api/stock_analysis_controller_api.py
 openapi_client/api/stock_analysis_excel_downloader_controller_api.py
@@ -133,5 +135,4 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_zacks_estimates_controller_api.py
 tox.ini

@@ -1,17 +1,14 @@
-# openapi_client.IssuesControllerApi
+# openapi_client.OrphanedItemsFinderControllerApi
 
 All URIs are relative to *http://localhost:8080*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**delete_issue**](IssuesControllerApi.md#delete_issue) | **DELETE** /api/issues/{id} | 
-[**find_issues**](IssuesControllerApi.md#find_issues) | **GET** /api/issues | 
-[**generate_issues**](IssuesControllerApi.md#generate_issues) | **POST** /api/issues/generate-issues | 
-[**save_issues**](IssuesControllerApi.md#save_issues) | **POST** /api/issues | 
+[**orphaned_items**](OrphanedItemsFinderControllerApi.md#orphaned_items) | **POST** /api/orphaned-items-finder | 
 
 
-# **delete_issue**
-> delete_issue(id)
+# **orphaned_items**
+> [Item] orphaned_items(stock_analysis2)
 
 
 
@@ -20,130 +17,8 @@ Method | HTTP request | Description
 ```python
 import time
 import openapi_client
-from openapi_client.api import issues_controller_api
-from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8080
-# See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "http://localhost:8080"
-)
-
-
-# Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
-    # Create an instance of the API class
-    api_instance = issues_controller_api.IssuesControllerApi(api_client)
-    id = "id_example" # str | 
-
-    # example passing only required values which don't have defaults set
-    try:
-        api_instance.delete_issue(id)
-    except openapi_client.ApiException as e:
-        print("Exception when calling IssuesControllerApi->delete_issue: %s\n" % e)
-```
-
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  |
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: Not defined
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **find_issues**
-> [Issue] find_issues(stock_analysis_id)
-
-
-
-### Example
-
-```python
-import time
-import openapi_client
-from openapi_client.api import issues_controller_api
-from openapi_client.model.issue import Issue
-from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8080
-# See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "http://localhost:8080"
-)
-
-
-# Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
-    # Create an instance of the API class
-    api_instance = issues_controller_api.IssuesControllerApi(api_client)
-    stock_analysis_id = "stockAnalysisId_example" # str | 
-
-    # example passing only required values which don't have defaults set
-    try:
-        api_response = api_instance.find_issues(stock_analysis_id)
-        pprint(api_response)
-    except openapi_client.ApiException as e:
-        print("Exception when calling IssuesControllerApi->find_issues: %s\n" % e)
-```
-
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **stock_analysis_id** | **str**|  |
-
-### Return type
-
-[**[Issue]**](Issue.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: */*
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **generate_issues**
-> [Issue] generate_issues(stock_analysis2)
-
-
-
-### Example
-
-```python
-import time
-import openapi_client
-from openapi_client.api import issues_controller_api
-from openapi_client.model.issue import Issue
+from openapi_client.api import orphaned_items_finder_controller_api
+from openapi_client.model.item import Item
 from openapi_client.model.stock_analysis2 import StockAnalysis2
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
@@ -156,7 +31,7 @@ configuration = openapi_client.Configuration(
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = issues_controller_api.IssuesControllerApi(api_client)
+    api_instance = orphaned_items_finder_controller_api.OrphanedItemsFinderControllerApi(api_client)
     stock_analysis2 = StockAnalysis2(
         get_id="get_id_example",
         name="name_example",
@@ -850,10 +725,10 @@ with openapi_client.ApiClient() as api_client:
 
     # example passing only required values which don't have defaults set
     try:
-        api_response = api_instance.generate_issues(stock_analysis2)
+        api_response = api_instance.orphaned_items(stock_analysis2)
         pprint(api_response)
     except openapi_client.ApiException as e:
-        print("Exception when calling IssuesControllerApi->generate_issues: %s\n" % e)
+        print("Exception when calling OrphanedItemsFinderControllerApi->orphaned_items: %s\n" % e)
 ```
 
 
@@ -865,7 +740,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[Issue]**](Issue.md)
+[**[Item]**](Item.md)
 
 ### Authorization
 
@@ -875,76 +750,6 @@ No authorization required
 
  - **Content-Type**: application/json
  - **Accept**: */*
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **save_issues**
-> save_issues(issue)
-
-
-
-### Example
-
-```python
-import time
-import openapi_client
-from openapi_client.api import issues_controller_api
-from openapi_client.model.issue import Issue
-from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8080
-# See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "http://localhost:8080"
-)
-
-
-# Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
-    # Create an instance of the API class
-    api_instance = issues_controller_api.IssuesControllerApi(api_client)
-    issue = [
-        Issue(
-            get_id="get_id_example",
-            stock_analysis_id="stock_analysis_id_example",
-            item_name="item_name_example",
-            issue_type="RevenueItemNotFound",
-            message="message_example",
-            created_at=dateutil_parser('1970-01-01T00:00:00.00Z'),
-        ),
-    ] # [Issue] | 
-
-    # example passing only required values which don't have defaults set
-    try:
-        api_instance.save_issues(issue)
-    except openapi_client.ApiException as e:
-        print("Exception when calling IssuesControllerApi->save_issues: %s\n" % e)
-```
-
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **issue** | [**[Issue]**](Issue.md)|  |
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: Not defined
 
 
 ### HTTP response details

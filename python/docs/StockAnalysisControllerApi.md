@@ -169,6 +169,9 @@ with openapi_client.ApiClient() as api_client:
                     subtotal=True,
                 ),
             ],
+            suppressed_items=[
+                "suppressed_items_example",
+            ],
             total_revenue_concept_name="total_revenue_concept_name_example",
             eps_concept_name="eps_concept_name_example",
             net_income_concept_name="net_income_concept_name_example",
@@ -732,6 +735,9 @@ with openapi_client.ApiClient() as api_client:
                     ),
                     subtotal=True,
                 ),
+            ],
+            suppressed_items=[
+                "suppressed_items_example",
             ],
             total_revenue_concept_name="total_revenue_concept_name_example",
             eps_concept_name="eps_concept_name_example",
@@ -1480,6 +1486,9 @@ with openapi_client.ApiClient() as api_client:
                     ),
                     subtotal=True,
                 ),
+            ],
+            suppressed_items=[
+                "suppressed_items_example",
             ],
             total_revenue_concept_name="total_revenue_concept_name_example",
             eps_concept_name="eps_concept_name_example",

@@ -105,6 +105,7 @@ Class | Method | HTTP request | Description
 *MarketingControllerApi* | [**stock_analysis_request**](docs/MarketingControllerApi.md#stock_analysis_request) | **POST** /public/marketing/stock-analysis-request | 
 *ModelBuilderFactoryControllerApi* | [**best_effort_model**](docs/ModelBuilderFactoryControllerApi.md#best_effort_model) | **GET** /api/sec/model-builder-factory | 
 *MxParserControllerApi* | [**evaluate**](docs/MxParserControllerApi.md#evaluate) | **POST** /api/mxparser | 
+*OrphanedItemsFinderControllerApi* | [**orphaned_items**](docs/OrphanedItemsFinderControllerApi.md#orphaned_items) | **POST** /api/orphaned-items-finder | 
 *PublishedStockAnalysisControllerApi* | [**find_published_stock_analyses**](docs/PublishedStockAnalysisControllerApi.md#find_published_stock_analyses) | **GET** /public/published-stock-analyses | 
 *PublishedStockAnalysisControllerApi* | [**get_published_stock_analysis**](docs/PublishedStockAnalysisControllerApi.md#get_published_stock_analysis) | **GET** /public/published-stock-analyses/{id} | 
 *StockAnalysisControllerApi* | [**delete_stock_analysis**](docs/StockAnalysisControllerApi.md#delete_stock_analysis) | **DELETE** /api/stock-analyzer/stock-analyses/{id} | 

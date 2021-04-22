@@ -78,6 +78,7 @@ class Model(ModelNormal):
         lazy_import()
         return {
             'item_overrides': ([Item],),  # noqa: E501
+            'suppressed_items': ([str],),  # noqa: E501
             'income_statement_items': ([Item],),  # noqa: E501
             'balance_sheet_items': ([Item],),  # noqa: E501
             'cash_flow_statement_items': ([Item],),  # noqa: E501
@@ -106,6 +107,7 @@ class Model(ModelNormal):
 
     attribute_map = {
         'item_overrides': 'itemOverrides',  # noqa: E501
+        'suppressed_items': 'suppressedItems',  # noqa: E501
         'income_statement_items': 'incomeStatementItems',  # noqa: E501
         'balance_sheet_items': 'balanceSheetItems',  # noqa: E501
         'cash_flow_statement_items': 'cashFlowStatementItems',  # noqa: E501
@@ -139,11 +141,12 @@ class Model(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, item_overrides, income_statement_items, balance_sheet_items, cash_flow_statement_items, other_items, beta, risk_free_rate, equity_risk_premium, terminal_growth_rate, periods, excel_column_offset, excel_row_offset, *args, **kwargs):  # noqa: E501
+    def __init__(self, item_overrides, suppressed_items, income_statement_items, balance_sheet_items, cash_flow_statement_items, other_items, beta, risk_free_rate, equity_risk_premium, terminal_growth_rate, periods, excel_column_offset, excel_row_offset, *args, **kwargs):  # noqa: E501
         """Model - a model defined in OpenAPI
 
         Args:
             item_overrides ([Item]):
+            suppressed_items ([str]):
             income_statement_items ([Item]):
             balance_sheet_items ([Item]):
             cash_flow_statement_items ([Item]):
@@ -221,6 +224,7 @@ class Model(ModelNormal):
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
         self.item_overrides = item_overrides
+        self.suppressed_items = suppressed_items
         self.income_statement_items = income_statement_items
         self.balance_sheet_items = balance_sheet_items
         self.cash_flow_statement_items = cash_flow_statement_items
