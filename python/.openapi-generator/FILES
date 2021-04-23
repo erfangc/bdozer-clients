@@ -135,5 +135,4 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_percent_of_another_item.py
 tox.ini
