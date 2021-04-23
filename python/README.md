@@ -156,7 +156,6 @@ Class | Method | HTTP request | Description
  - [PercentOfAnotherItem](docs/PercentOfAnotherItem.md)
  - [PercentOfRevenue](docs/PercentOfRevenue.md)
  - [PercentOfRevenueAutoFill](docs/PercentOfRevenueAutoFill.md)
- - [PercentOfTotalAsset](docs/PercentOfTotalAsset.md)
  - [StockAnalysis2](docs/StockAnalysis2.md)
  - [StockAnalysisInterest](docs/StockAnalysisInterest.md)
  - [StockAnalysisProjection](docs/StockAnalysisProjection.md)

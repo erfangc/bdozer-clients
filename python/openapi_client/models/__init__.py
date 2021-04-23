@@ -40,7 +40,6 @@ from openapi_client.model.mx_parser_evaluate_response import MxParserEvaluateRes
 from openapi_client.model.percent_of_another_item import PercentOfAnotherItem
 from openapi_client.model.percent_of_revenue import PercentOfRevenue
 from openapi_client.model.percent_of_revenue_auto_fill import PercentOfRevenueAutoFill
-from openapi_client.model.percent_of_total_asset import PercentOfTotalAsset
 from openapi_client.model.stock_analysis2 import StockAnalysis2
 from openapi_client.model.stock_analysis_interest import StockAnalysisInterest
 from openapi_client.model.stock_analysis_projection import StockAnalysisProjection

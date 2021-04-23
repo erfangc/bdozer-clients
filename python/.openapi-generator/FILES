@@ -45,7 +45,6 @@ docs/OrphanedItemsFinderControllerApi.md
 docs/PercentOfAnotherItem.md
 docs/PercentOfRevenue.md
 docs/PercentOfRevenueAutoFill.md
-docs/PercentOfTotalAsset.md
 docs/PublishedStockAnalysisControllerApi.md
 docs/StockAnalysis2.md
 docs/StockAnalysisControllerApi.md
@@ -116,7 +115,6 @@ openapi_client/model/mx_parser_evaluate_response.py
 openapi_client/model/percent_of_another_item.py
 openapi_client/model/percent_of_revenue.py
 openapi_client/model/percent_of_revenue_auto_fill.py
-openapi_client/model/percent_of_total_asset.py
 openapi_client/model/stock_analysis2.py
 openapi_client/model/stock_analysis_interest.py
 openapi_client/model/stock_analysis_projection.py

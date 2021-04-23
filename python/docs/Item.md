@@ -13,7 +13,6 @@ Name | Type | Description | Notes
 **sum_of_other_items** | [**SumOfOtherItems**](SumOfOtherItems.md) |  | [optional] 
 **unit_sales_revenue** | [**UnitSalesRevenue**](UnitSalesRevenue.md) |  | [optional] 
 **discrete** | [**Discrete**](Discrete.md) |  | [optional] 
-**percent_of_total_asset** | [**PercentOfTotalAsset**](PercentOfTotalAsset.md) |  | [optional] 
 **percent_of_revenue** | [**PercentOfRevenue**](PercentOfRevenue.md) |  | [optional] 
 **percent_of_another_item** | [**PercentOfAnotherItem**](PercentOfAnotherItem.md) |  | [optional] 
 **compounded_growth** | [**CompoundedGrowth**](CompoundedGrowth.md) |  | [optional] 

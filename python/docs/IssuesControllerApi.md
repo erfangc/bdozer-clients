@@ -206,9 +206,6 @@ with openapi_client.ApiClient() as api_client:
                             "key": "key_example",
                         },
                     ),
-                    percent_of_total_asset=PercentOfTotalAsset(
-                        percent_of_total_asset=3.14,
-                    ),
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
                     ),
@@ -265,9 +262,6 @@ with openapi_client.ApiClient() as api_client:
                     discrete=Discrete(
                         formulas={},
                     ),
-                    percent_of_total_asset=PercentOfTotalAsset(
-                        percent_of_total_asset=3.14,
-                    ),
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
                     ),
@@ -316,9 +310,6 @@ with openapi_client.ApiClient() as api_client:
                     ),
                     discrete=Discrete(
                         formulas={},
-                    ),
-                    percent_of_total_asset=PercentOfTotalAsset(
-                        percent_of_total_asset=3.14,
                     ),
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
@@ -369,9 +360,6 @@ with openapi_client.ApiClient() as api_client:
                     discrete=Discrete(
                         formulas={},
                     ),
-                    percent_of_total_asset=PercentOfTotalAsset(
-                        percent_of_total_asset=3.14,
-                    ),
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
                     ),
@@ -420,9 +408,6 @@ with openapi_client.ApiClient() as api_client:
                     ),
                     discrete=Discrete(
                         formulas={},
-                    ),
-                    percent_of_total_asset=PercentOfTotalAsset(
-                        percent_of_total_asset=3.14,
                     ),
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
@@ -483,9 +468,6 @@ with openapi_client.ApiClient() as api_client:
                     ),
                     discrete=Discrete(
                         formulas={},
-                    ),
-                    percent_of_total_asset=PercentOfTotalAsset(
-                        percent_of_total_asset=3.14,
                     ),
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
@@ -556,9 +538,6 @@ with openapi_client.ApiClient() as api_client:
                             discrete=Discrete(
                                 formulas={},
                             ),
-                            percent_of_total_asset=PercentOfTotalAsset(
-                                percent_of_total_asset=3.14,
-                            ),
                             percent_of_revenue=PercentOfRevenue(
                                 percent_of_revenue=3.14,
                             ),
@@ -621,9 +600,6 @@ with openapi_client.ApiClient() as api_client:
                                 ),
                                 discrete=Discrete(
                                     formulas={},
-                                ),
-                                percent_of_total_asset=PercentOfTotalAsset(
-                                    percent_of_total_asset=3.14,
                                 ),
                                 percent_of_revenue=PercentOfRevenue(
                                     percent_of_revenue=3.14,
@@ -688,9 +664,6 @@ with openapi_client.ApiClient() as api_client:
                             discrete=Discrete(
                                 formulas={},
                             ),
-                            percent_of_total_asset=PercentOfTotalAsset(
-                                percent_of_total_asset=3.14,
-                            ),
                             percent_of_revenue=PercentOfRevenue(
                                 percent_of_revenue=3.14,
                             ),
@@ -752,9 +725,6 @@ with openapi_client.ApiClient() as api_client:
                 discrete=Discrete(
                     formulas={},
                 ),
-                percent_of_total_asset=PercentOfTotalAsset(
-                    percent_of_total_asset=3.14,
-                ),
                 percent_of_revenue=PercentOfRevenue(
                     percent_of_revenue=3.14,
                 ),
@@ -801,9 +771,6 @@ with openapi_client.ApiClient() as api_client:
                 ),
                 discrete=Discrete(
                     formulas={},
-                ),
-                percent_of_total_asset=PercentOfTotalAsset(
-                    percent_of_total_asset=3.14,
                 ),
                 percent_of_revenue=PercentOfRevenue(
                     percent_of_revenue=3.14,
