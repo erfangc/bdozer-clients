@@ -83,10 +83,11 @@ Class | Method | HTTP request | Description
 *EdgarExplorerControllerApi* | [**search_entities**](docs/EdgarExplorerControllerApi.md#search_entities) | **GET** /public/edgar-explorer/entities | 
 *EdgarExplorerControllerApi* | [**search_filings**](docs/EdgarExplorerControllerApi.md#search_filings) | **GET** /public/edgar-explorer/filings | 
 *FactAutoFillerControllerApi* | [**get_fixed_cost_auto_fills**](docs/FactAutoFillerControllerApi.md#get_fixed_cost_auto_fills) | **POST** /api/fact-auto-filler/{factId}/fixed-cost | 
-*FactAutoFillerControllerApi* | [**get_percent_of_revenue_auto_fills**](docs/FactAutoFillerControllerApi.md#get_percent_of_revenue_auto_fills) | **POST** /api/fact-auto-filler/{factId}/percent-of-revenue | 
+*FactAutoFillerControllerApi* | [**get_percent_of_items_auto_fills**](docs/FactAutoFillerControllerApi.md#get_percent_of_items_auto_fills) | **POST** /api/fact-auto-filler/{itemName}/percent-of-another-item | 
+*FactAutoFillerControllerApi* | [**get_percent_of_revenue_auto_fills**](docs/FactAutoFillerControllerApi.md#get_percent_of_revenue_auto_fills) | **POST** /api/fact-auto-filler/{itemName}/percent-of-revenue | 
 *FactBaseControllerApi* | [**ingest_filing**](docs/FactBaseControllerApi.md#ingest_filing) | **POST** /api/fact-base/filing-ingestor | 
 *FactBaseControllerApi* | [**ingest_q4_facts**](docs/FactBaseControllerApi.md#ingest_q4_facts) | **POST** /api/fact-base/filing-ingestor/q4 | 
-*FactBaseControllerApi* | [**run_rss_filing_ingestor**](docs/FactBaseControllerApi.md#run_rss_filing_ingestor) | **POST** /api/fact-base/rss-filing-ingestor | 
+*FactBaseControllerApi* | [**latest**](docs/FactBaseControllerApi.md#latest) | **POST** /api/fact-base/latest | 
 *FactBaseUnsecuredControllerApi* | [**get_annual_time_series**](docs/FactBaseUnsecuredControllerApi.md#get_annual_time_series) | **GET** /public/fact-base/{factId}/time-series | 
 *FactBaseUnsecuredControllerApi* | [**get_annual_time_series1**](docs/FactBaseUnsecuredControllerApi.md#get_annual_time_series1) | **GET** /public/fact-base/time-series | 
 *FactBaseUnsecuredControllerApi* | [**get_fact**](docs/FactBaseUnsecuredControllerApi.md#get_fact) | **GET** /public/fact-base/{factId} | 
@@ -108,6 +109,10 @@ Class | Method | HTTP request | Description
 *OrphanedItemsFinderControllerApi* | [**orphaned_items**](docs/OrphanedItemsFinderControllerApi.md#orphaned_items) | **POST** /api/orphaned-items-finder | 
 *PublishedStockAnalysisControllerApi* | [**find_published_stock_analyses**](docs/PublishedStockAnalysisControllerApi.md#find_published_stock_analyses) | **GET** /public/published-stock-analyses | 
 *PublishedStockAnalysisControllerApi* | [**get_published_stock_analysis**](docs/PublishedStockAnalysisControllerApi.md#get_published_stock_analysis) | **GET** /public/published-stock-analyses/{id} | 
+*RevenueModelerControllerApi* | [**delete_revenue_model**](docs/RevenueModelerControllerApi.md#delete_revenue_model) | **DELETE** /api/revenue-modeler/{id} | 
+*RevenueModelerControllerApi* | [**get_revenue_model**](docs/RevenueModelerControllerApi.md#get_revenue_model) | **GET** /api/revenue-modeler/{id} | 
+*RevenueModelerControllerApi* | [**model_revenue**](docs/RevenueModelerControllerApi.md#model_revenue) | **POST** /api/revenue-modeler/model-revenue | 
+*RevenueModelerControllerApi* | [**save_revenue_model**](docs/RevenueModelerControllerApi.md#save_revenue_model) | **POST** /api/revenue-modeler | 
 *StockAnalysisControllerApi* | [**delete_stock_analysis**](docs/StockAnalysisControllerApi.md#delete_stock_analysis) | **DELETE** /api/stock-analyzer/stock-analyses/{id} | 
 *StockAnalysisControllerApi* | [**evaluate_stock_analysis**](docs/StockAnalysisControllerApi.md#evaluate_stock_analysis) | **POST** /api/stock-analyzer/stock-analyses/evaluate | 
 *StockAnalysisControllerApi* | [**find_stock_analyses**](docs/StockAnalysisControllerApi.md#find_stock_analyses) | **GET** /api/stock-analyzer/stock-analyses | 
@@ -116,7 +121,7 @@ Class | Method | HTTP request | Description
 *StockAnalysisControllerApi* | [**refresh_stock_analysis**](docs/StockAnalysisControllerApi.md#refresh_stock_analysis) | **POST** /api/stock-analyzer/stock-analyses/refresh | Refresh a stock analysis by rerunning the model
 *StockAnalysisControllerApi* | [**save_stock_analysis**](docs/StockAnalysisControllerApi.md#save_stock_analysis) | **POST** /api/stock-analyzer/stock-analyses | 
 *StockAnalysisControllerApi* | [**unpublish**](docs/StockAnalysisControllerApi.md#unpublish) | **POST** /api/stock-analyzer/stock-analyses/{id}/unpublish | 
-*StockAnalysisExcelDownloaderControllerApi* | [**download**](docs/StockAnalysisExcelDownloaderControllerApi.md#download) | **GET** /api/stock-analyzer/workflow/{id}/download | 
+*StockAnalysisExcelDownloaderControllerApi* | [**download**](docs/StockAnalysisExcelDownloaderControllerApi.md#download) | **GET** /public/stock-analyses/{id}/excel-download | 
 *TagControllerApi* | [**delete_tag**](docs/TagControllerApi.md#delete_tag) | **DELETE** /api/tags/{id} | 
 *TagControllerApi* | [**find_tag**](docs/TagControllerApi.md#find_tag) | **GET** /api/tags | 
 *TagControllerApi* | [**save_tag**](docs/TagControllerApi.md#save_tag) | **POST** /api/tags | 
@@ -149,20 +154,23 @@ Class | Method | HTTP request | Description
  - [HistoricalValue](docs/HistoricalValue.md)
  - [Issue](docs/Issue.md)
  - [Item](docs/Item.md)
+ - [ManualProjection](docs/ManualProjection.md)
+ - [ManualProjections](docs/ManualProjections.md)
  - [Model](docs/Model.md)
  - [ModelTemplate](docs/ModelTemplate.md)
  - [MxParserEvaluateRequest](docs/MxParserEvaluateRequest.md)
  - [MxParserEvaluateResponse](docs/MxParserEvaluateResponse.md)
  - [PercentOfAnotherItem](docs/PercentOfAnotherItem.md)
+ - [PercentOfAnotherItemAutoFill](docs/PercentOfAnotherItemAutoFill.md)
  - [PercentOfRevenue](docs/PercentOfRevenue.md)
  - [PercentOfRevenueAutoFill](docs/PercentOfRevenueAutoFill.md)
+ - [RevenueModel](docs/RevenueModel.md)
  - [StockAnalysis2](docs/StockAnalysis2.md)
  - [StockAnalysisInterest](docs/StockAnalysisInterest.md)
  - [StockAnalysisProjection](docs/StockAnalysisProjection.md)
  - [StockAnalysisRequest](docs/StockAnalysisRequest.md)
  - [SumOfOtherItems](docs/SumOfOtherItems.md)
  - [Tag](docs/Tag.md)
- - [UnitSalesRevenue](docs/UnitSalesRevenue.md)
  - [Waterfall](docs/Waterfall.md)
  - [XbrlExplicitMember](docs/XbrlExplicitMember.md)
 

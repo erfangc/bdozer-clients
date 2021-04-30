@@ -196,15 +196,18 @@ with openapi_client.ApiClient() as api_client:
                             ),
                         ],
                     ),
-                    unit_sales_revenue=UnitSalesRevenue(
-                        steady_state_units_sold=3.14,
-                        average_selling_price=3.14,
-                        initial_units_sold=3.14,
-                    ),
                     discrete=Discrete(
                         formulas={
                             "key": "key_example",
                         },
+                    ),
+                    manual_projections=ManualProjections(
+                        manual_projections=[
+                            ManualProjection(
+                                period=1,
+                                value=3.14,
+                            ),
+                        ],
                     ),
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
@@ -223,7 +226,6 @@ with openapi_client.ApiClient() as api_client:
                         commentary="commentary_example",
                         generator_class="generator_class_example",
                     ),
-                    subtotal=True,
                 ),
             ],
             suppressed_items=[
@@ -254,13 +256,11 @@ with openapi_client.ApiClient() as api_client:
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
                     ),
-                    unit_sales_revenue=UnitSalesRevenue(
-                        steady_state_units_sold=3.14,
-                        average_selling_price=3.14,
-                        initial_units_sold=3.14,
-                    ),
                     discrete=Discrete(
                         formulas={},
+                    ),
+                    manual_projections=ManualProjections(
+                        manual_projections=[],
                     ),
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
@@ -279,7 +279,6 @@ with openapi_client.ApiClient() as api_client:
                         commentary="commentary_example",
                         generator_class="generator_class_example",
                     ),
-                    subtotal=True,
                 ),
             ],
             balance_sheet_items=[
@@ -303,13 +302,11 @@ with openapi_client.ApiClient() as api_client:
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
                     ),
-                    unit_sales_revenue=UnitSalesRevenue(
-                        steady_state_units_sold=3.14,
-                        average_selling_price=3.14,
-                        initial_units_sold=3.14,
-                    ),
                     discrete=Discrete(
                         formulas={},
+                    ),
+                    manual_projections=ManualProjections(
+                        manual_projections=[],
                     ),
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
@@ -328,7 +325,6 @@ with openapi_client.ApiClient() as api_client:
                         commentary="commentary_example",
                         generator_class="generator_class_example",
                     ),
-                    subtotal=True,
                 ),
             ],
             cash_flow_statement_items=[
@@ -352,13 +348,11 @@ with openapi_client.ApiClient() as api_client:
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
                     ),
-                    unit_sales_revenue=UnitSalesRevenue(
-                        steady_state_units_sold=3.14,
-                        average_selling_price=3.14,
-                        initial_units_sold=3.14,
-                    ),
                     discrete=Discrete(
                         formulas={},
+                    ),
+                    manual_projections=ManualProjections(
+                        manual_projections=[],
                     ),
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
@@ -377,7 +371,6 @@ with openapi_client.ApiClient() as api_client:
                         commentary="commentary_example",
                         generator_class="generator_class_example",
                     ),
-                    subtotal=True,
                 ),
             ],
             other_items=[
@@ -401,13 +394,11 @@ with openapi_client.ApiClient() as api_client:
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
                     ),
-                    unit_sales_revenue=UnitSalesRevenue(
-                        steady_state_units_sold=3.14,
-                        average_selling_price=3.14,
-                        initial_units_sold=3.14,
-                    ),
                     discrete=Discrete(
                         formulas={},
+                    ),
+                    manual_projections=ManualProjections(
+                        manual_projections=[],
                     ),
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
@@ -426,7 +417,6 @@ with openapi_client.ApiClient() as api_client:
                         commentary="commentary_example",
                         generator_class="generator_class_example",
                     ),
-                    subtotal=True,
                 ),
             ],
             beta=3.14,
@@ -461,13 +451,11 @@ with openapi_client.ApiClient() as api_client:
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
                     ),
-                    unit_sales_revenue=UnitSalesRevenue(
-                        steady_state_units_sold=3.14,
-                        average_selling_price=3.14,
-                        initial_units_sold=3.14,
-                    ),
                     discrete=Discrete(
                         formulas={},
+                    ),
+                    manual_projections=ManualProjections(
+                        manual_projections=[],
                     ),
                     percent_of_revenue=PercentOfRevenue(
                         percent_of_revenue=3.14,
@@ -486,7 +474,6 @@ with openapi_client.ApiClient() as api_client:
                         commentary="commentary_example",
                         generator_class="generator_class_example",
                     ),
-                    subtotal=True,
                 ),
                 value=3.14,
                 formula="formula_example",
@@ -530,13 +517,11 @@ with openapi_client.ApiClient() as api_client:
                             sum_of_other_items=SumOfOtherItems(
                                 components=[],
                             ),
-                            unit_sales_revenue=UnitSalesRevenue(
-                                steady_state_units_sold=3.14,
-                                average_selling_price=3.14,
-                                initial_units_sold=3.14,
-                            ),
                             discrete=Discrete(
                                 formulas={},
+                            ),
+                            manual_projections=ManualProjections(
+                                manual_projections=[],
                             ),
                             percent_of_revenue=PercentOfRevenue(
                                 percent_of_revenue=3.14,
@@ -555,7 +540,6 @@ with openapi_client.ApiClient() as api_client:
                                 commentary="commentary_example",
                                 generator_class="generator_class_example",
                             ),
-                            subtotal=True,
                         ),
                         value=3.14,
                         formula="formula_example",
@@ -593,13 +577,11 @@ with openapi_client.ApiClient() as api_client:
                                 sum_of_other_items=SumOfOtherItems(
                                     components=[],
                                 ),
-                                unit_sales_revenue=UnitSalesRevenue(
-                                    steady_state_units_sold=3.14,
-                                    average_selling_price=3.14,
-                                    initial_units_sold=3.14,
-                                ),
                                 discrete=Discrete(
                                     formulas={},
+                                ),
+                                manual_projections=ManualProjections(
+                                    manual_projections=[],
                                 ),
                                 percent_of_revenue=PercentOfRevenue(
                                     percent_of_revenue=3.14,
@@ -618,7 +600,6 @@ with openapi_client.ApiClient() as api_client:
                                     commentary="commentary_example",
                                     generator_class="generator_class_example",
                                 ),
-                                subtotal=True,
                             ),
                             value=3.14,
                             formula="formula_example",
@@ -656,13 +637,11 @@ with openapi_client.ApiClient() as api_client:
                             sum_of_other_items=SumOfOtherItems(
                                 components=[],
                             ),
-                            unit_sales_revenue=UnitSalesRevenue(
-                                steady_state_units_sold=3.14,
-                                average_selling_price=3.14,
-                                initial_units_sold=3.14,
-                            ),
                             discrete=Discrete(
                                 formulas={},
+                            ),
+                            manual_projections=ManualProjections(
+                                manual_projections=[],
                             ),
                             percent_of_revenue=PercentOfRevenue(
                                 percent_of_revenue=3.14,
@@ -681,7 +660,6 @@ with openapi_client.ApiClient() as api_client:
                                 commentary="commentary_example",
                                 generator_class="generator_class_example",
                             ),
-                            subtotal=True,
                         ),
                         value=3.14,
                         formula="formula_example",
@@ -717,13 +695,11 @@ with openapi_client.ApiClient() as api_client:
                 sum_of_other_items=SumOfOtherItems(
                     components=[],
                 ),
-                unit_sales_revenue=UnitSalesRevenue(
-                    steady_state_units_sold=3.14,
-                    average_selling_price=3.14,
-                    initial_units_sold=3.14,
-                ),
                 discrete=Discrete(
                     formulas={},
+                ),
+                manual_projections=ManualProjections(
+                    manual_projections=[],
                 ),
                 percent_of_revenue=PercentOfRevenue(
                     percent_of_revenue=3.14,
@@ -742,7 +718,6 @@ with openapi_client.ApiClient() as api_client:
                     commentary="commentary_example",
                     generator_class="generator_class_example",
                 ),
-                subtotal=True,
             ),
             profit_per_share=Item(
                 name="name_example",
@@ -764,13 +739,11 @@ with openapi_client.ApiClient() as api_client:
                 sum_of_other_items=SumOfOtherItems(
                     components=[],
                 ),
-                unit_sales_revenue=UnitSalesRevenue(
-                    steady_state_units_sold=3.14,
-                    average_selling_price=3.14,
-                    initial_units_sold=3.14,
-                ),
                 discrete=Discrete(
                     formulas={},
+                ),
+                manual_projections=ManualProjections(
+                    manual_projections=[],
                 ),
                 percent_of_revenue=PercentOfRevenue(
                     percent_of_revenue=3.14,
@@ -789,12 +762,12 @@ with openapi_client.ApiClient() as api_client:
                     commentary="commentary_example",
                     generator_class="generator_class_example",
                 ),
-                subtotal=True,
             ),
             target_price=3.14,
             discount_rate=3.14,
             revenue_cagr=3.14,
             current_price=3.14,
+            irr=3.14,
         ),
         user_id="user_id_example",
         tags=[

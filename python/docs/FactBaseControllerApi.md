@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**ingest_filing**](FactBaseControllerApi.md#ingest_filing) | **POST** /api/fact-base/filing-ingestor | 
 [**ingest_q4_facts**](FactBaseControllerApi.md#ingest_q4_facts) | **POST** /api/fact-base/filing-ingestor/q4 | 
-[**run_rss_filing_ingestor**](FactBaseControllerApi.md#run_rss_filing_ingestor) | **POST** /api/fact-base/rss-filing-ingestor | 
+[**latest**](FactBaseControllerApi.md#latest) | **POST** /api/fact-base/latest | 
 
 
 # **ingest_filing**
@@ -133,8 +133,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **run_rss_filing_ingestor**
-> run_rss_filing_ingestor()
+# **latest**
+> latest()
 
 
 
@@ -156,22 +156,17 @@ configuration = openapi_client.Configuration(
 with openapi_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = fact_base_controller_api.FactBaseControllerApi(api_client)
-    num_years_to_lookback = 1 # int |  (optional)
 
-    # example passing only required values which don't have defaults set
-    # and optional values
+    # example, this endpoint has no required or optional parameters
     try:
-        api_instance.run_rss_filing_ingestor(num_years_to_lookback=num_years_to_lookback)
+        api_instance.latest()
     except openapi_client.ApiException as e:
-        print("Exception when calling FactBaseControllerApi->run_rss_filing_ingestor: %s\n" % e)
+        print("Exception when calling FactBaseControllerApi->latest: %s\n" % e)
 ```
 
 
 ### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **num_years_to_lookback** | **int**|  | [optional]
+This endpoint does not need any parameter.
 
 ### Return type
 

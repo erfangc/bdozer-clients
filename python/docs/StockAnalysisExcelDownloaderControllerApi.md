@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:8080*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**download**](StockAnalysisExcelDownloaderControllerApi.md#download) | **GET** /api/stock-analyzer/workflow/{id}/download | 
+[**download**](StockAnalysisExcelDownloaderControllerApi.md#download) | **GET** /public/stock-analyses/{id}/excel-download | 
 
 
 # **download**

@@ -32,19 +32,19 @@ def lazy_import():
     from openapi_client.model.discrete import Discrete
     from openapi_client.model.fixed_cost import FixedCost
     from openapi_client.model.historical_value import HistoricalValue
+    from openapi_client.model.manual_projections import ManualProjections
     from openapi_client.model.percent_of_another_item import PercentOfAnotherItem
     from openapi_client.model.percent_of_revenue import PercentOfRevenue
     from openapi_client.model.sum_of_other_items import SumOfOtherItems
-    from openapi_client.model.unit_sales_revenue import UnitSalesRevenue
     globals()['Commentary'] = Commentary
     globals()['CompoundedGrowth'] = CompoundedGrowth
     globals()['Discrete'] = Discrete
     globals()['FixedCost'] = FixedCost
     globals()['HistoricalValue'] = HistoricalValue
+    globals()['ManualProjections'] = ManualProjections
     globals()['PercentOfAnotherItem'] = PercentOfAnotherItem
     globals()['PercentOfRevenue'] = PercentOfRevenue
     globals()['SumOfOtherItems'] = SumOfOtherItems
-    globals()['UnitSalesRevenue'] = UnitSalesRevenue
 
 
 class Item(ModelNormal):
@@ -76,8 +76,8 @@ class Item(ModelNormal):
             'DISCRETE': "Discrete",
             'COMPOUNDEDGROWTH': "CompoundedGrowth",
             'SUMOFOTHERITEMS': "SumOfOtherItems",
-            'UNITSALESREVENUE': "UnitSalesRevenue",
             'CUSTOM': "Custom",
+            'MANUALPROJECTIONS': "ManualProjections",
             'PERCENTOFREVENUE': "PercentOfRevenue",
             'PERCENTOFANOTHERITEM': "PercentOfAnotherItem",
             'FIXEDCOST': "FixedCost",
@@ -106,12 +106,11 @@ class Item(ModelNormal):
             'name': (str,),  # noqa: E501
             'type': (str,),  # noqa: E501
             'formula': (str,),  # noqa: E501
-            'subtotal': (bool,),  # noqa: E501
             'description': (str,),  # noqa: E501
             'historical_value': (HistoricalValue,),  # noqa: E501
             'sum_of_other_items': (SumOfOtherItems,),  # noqa: E501
-            'unit_sales_revenue': (UnitSalesRevenue,),  # noqa: E501
             'discrete': (Discrete,),  # noqa: E501
+            'manual_projections': (ManualProjections,),  # noqa: E501
             'percent_of_revenue': (PercentOfRevenue,),  # noqa: E501
             'percent_of_another_item': (PercentOfAnotherItem,),  # noqa: E501
             'compounded_growth': (CompoundedGrowth,),  # noqa: E501
@@ -128,12 +127,11 @@ class Item(ModelNormal):
         'name': 'name',  # noqa: E501
         'type': 'type',  # noqa: E501
         'formula': 'formula',  # noqa: E501
-        'subtotal': 'subtotal',  # noqa: E501
         'description': 'description',  # noqa: E501
         'historical_value': 'historicalValue',  # noqa: E501
         'sum_of_other_items': 'sumOfOtherItems',  # noqa: E501
-        'unit_sales_revenue': 'unitSalesRevenue',  # noqa: E501
         'discrete': 'discrete',  # noqa: E501
+        'manual_projections': 'manualProjections',  # noqa: E501
         'percent_of_revenue': 'percentOfRevenue',  # noqa: E501
         'percent_of_another_item': 'percentOfAnotherItem',  # noqa: E501
         'compounded_growth': 'compoundedGrowth',  # noqa: E501
@@ -153,14 +151,13 @@ class Item(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, name, type, formula, subtotal, *args, **kwargs):  # noqa: E501
+    def __init__(self, name, type, formula, *args, **kwargs):  # noqa: E501
         """Item - a model defined in OpenAPI
 
         Args:
             name (str):
             type (str):
             formula (str):
-            subtotal (bool):
 
         Keyword Args:
             _check_type (bool): if True, values for parameters in openapi_types
@@ -196,8 +193,8 @@ class Item(ModelNormal):
             description (str): [optional]  # noqa: E501
             historical_value (HistoricalValue): [optional]  # noqa: E501
             sum_of_other_items (SumOfOtherItems): [optional]  # noqa: E501
-            unit_sales_revenue (UnitSalesRevenue): [optional]  # noqa: E501
             discrete (Discrete): [optional]  # noqa: E501
+            manual_projections (ManualProjections): [optional]  # noqa: E501
             percent_of_revenue (PercentOfRevenue): [optional]  # noqa: E501
             percent_of_another_item (PercentOfAnotherItem): [optional]  # noqa: E501
             compounded_growth (CompoundedGrowth): [optional]  # noqa: E501
@@ -231,7 +228,6 @@ class Item(ModelNormal):
         self.name = name
         self.type = type
         self.formula = formula
-        self.subtotal = subtotal
         for var_name, var_value in kwargs.items():
             if var_name not in self.attribute_map and \
                         self._configuration is not None and \

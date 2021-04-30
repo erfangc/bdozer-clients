@@ -104,7 +104,7 @@ class StockAnalysisExcelDownloaderControllerApi(object):
             settings={
                 'response_type': ([str],),
                 'auth': [],
-                'endpoint_path': '/api/stock-analyzer/workflow/{id}/download',
+                'endpoint_path': '/public/stock-analyses/{id}/excel-download',
                 'operation_id': 'download',
                 'http_method': 'GET',
                 'servers': None,
