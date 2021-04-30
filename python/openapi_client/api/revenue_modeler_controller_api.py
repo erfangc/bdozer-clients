@@ -22,6 +22,7 @@ from openapi_client.model_utils import (  # noqa: F401
     validate_and_convert_types
 )
 from openapi_client.model.manual_projections import ManualProjections
+from openapi_client.model.model_revenue_request import ModelRevenueRequest
 from openapi_client.model.revenue_model import RevenueModel
 
 
@@ -269,7 +270,7 @@ class RevenueModelerControllerApi(object):
 
         def __model_revenue(
             self,
-            revenue_model,
+            model_revenue_request,
             **kwargs
         ):
             """model_revenue  # noqa: E501
@@ -277,11 +278,11 @@ class RevenueModelerControllerApi(object):
             This method makes a synchronous HTTP request by default. To make an
             asynchronous HTTP request, please pass async_req=True
 
-            >>> thread = api.model_revenue(revenue_model, async_req=True)
+            >>> thread = api.model_revenue(model_revenue_request, async_req=True)
             >>> result = thread.get()
 
             Args:
-                revenue_model (RevenueModel):
+                model_revenue_request (ModelRevenueRequest):
 
             Keyword Args:
                 _return_http_data_only (bool): response data without head status
@@ -328,8 +329,8 @@ class RevenueModelerControllerApi(object):
                 '_check_return_type', True
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
-            kwargs['revenue_model'] = \
-                revenue_model
+            kwargs['model_revenue_request'] = \
+                model_revenue_request
             return self.call_with_http_info(**kwargs)
 
         self.model_revenue = _Endpoint(
@@ -343,10 +344,10 @@ class RevenueModelerControllerApi(object):
             },
             params_map={
                 'all': [
-                    'revenue_model',
+                    'model_revenue_request',
                 ],
                 'required': [
-                    'revenue_model',
+                    'model_revenue_request',
                 ],
                 'nullable': [
                 ],
@@ -361,13 +362,13 @@ class RevenueModelerControllerApi(object):
                 'allowed_values': {
                 },
                 'openapi_types': {
-                    'revenue_model':
-                        (RevenueModel,),
+                    'model_revenue_request':
+                        (ModelRevenueRequest,),
                 },
                 'attribute_map': {
                 },
                 'location_map': {
-                    'revenue_model': 'body',
+                    'model_revenue_request': 'body',
                 },
                 'collection_format_map': {
                 }

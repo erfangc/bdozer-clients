@@ -11,7 +11,6 @@ docs/CommentsControllerApi.md
 docs/Component.md
 docs/CompoundedGrowth.md
 docs/DerivedStockAnalytics.md
-docs/Discrete.md
 docs/EarlyAccessRequest.md
 docs/EdgarEntity.md
 docs/EdgarEntitySource.md
@@ -39,6 +38,7 @@ docs/ManualProjections.md
 docs/MarketingControllerApi.md
 docs/Model.md
 docs/ModelBuilderFactoryControllerApi.md
+docs/ModelRevenueRequest.md
 docs/ModelTemplate.md
 docs/MxParserControllerApi.md
 docs/MxParserEvaluateRequest.md
@@ -97,7 +97,6 @@ openapi_client/model/commentary.py
 openapi_client/model/component.py
 openapi_client/model/compounded_growth.py
 openapi_client/model/derived_stock_analytics.py
-openapi_client/model/discrete.py
 openapi_client/model/early_access_request.py
 openapi_client/model/edgar_entity.py
 openapi_client/model/edgar_entity_source.py
@@ -116,6 +115,7 @@ openapi_client/model/item.py
 openapi_client/model/manual_projection.py
 openapi_client/model/manual_projections.py
 openapi_client/model/model.py
+openapi_client/model/model_revenue_request.py
 openapi_client/model/model_template.py
 openapi_client/model/mx_parser_evaluate_request.py
 openapi_client/model/mx_parser_evaluate_response.py
@@ -141,4 +141,5 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_model_revenue_request.py
 tox.ini

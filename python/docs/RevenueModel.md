@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **get_id** | **str** |  | 
 **stock_analysis_id** | **str** |  | 
 **revenue_driver_type** | **str** |  | [optional] 
-**terminal_year** | **int** |  | [optional] 
+**terminal_fiscal_year** | **int** |  | [optional] 
 **terminal_year_average_revenue_per_user** | **float** |  | [optional] 
 **terminal_year_active_user** | **float** |  | [optional] 
 

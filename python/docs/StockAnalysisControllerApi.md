@@ -111,7 +111,7 @@ with openapi_client.ApiClient() as api_client:
                 Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[
@@ -134,11 +134,6 @@ with openapi_client.ApiClient() as api_client:
                                 item_name="item_name_example",
                             ),
                         ],
-                    ),
-                    discrete=Discrete(
-                        formulas={
-                            "key": "key_example",
-                        },
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[
@@ -178,7 +173,7 @@ with openapi_client.ApiClient() as api_client:
                 Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[],
@@ -194,9 +189,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    discrete=Discrete(
-                        formulas={},
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[],
@@ -224,7 +216,7 @@ with openapi_client.ApiClient() as api_client:
                 Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[],
@@ -240,9 +232,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    discrete=Discrete(
-                        formulas={},
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[],
@@ -270,7 +259,7 @@ with openapi_client.ApiClient() as api_client:
                 Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[],
@@ -286,9 +275,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    discrete=Discrete(
-                        formulas={},
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[],
@@ -316,7 +302,7 @@ with openapi_client.ApiClient() as api_client:
                 Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[],
@@ -332,9 +318,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    discrete=Discrete(
-                        formulas={},
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[],
@@ -648,7 +631,7 @@ with openapi_client.ApiClient() as api_client:
                 Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[
@@ -671,11 +654,6 @@ with openapi_client.ApiClient() as api_client:
                                 item_name="item_name_example",
                             ),
                         ],
-                    ),
-                    discrete=Discrete(
-                        formulas={
-                            "key": "key_example",
-                        },
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[
@@ -715,7 +693,7 @@ with openapi_client.ApiClient() as api_client:
                 Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[],
@@ -731,9 +709,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    discrete=Discrete(
-                        formulas={},
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[],
@@ -761,7 +736,7 @@ with openapi_client.ApiClient() as api_client:
                 Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[],
@@ -777,9 +752,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    discrete=Discrete(
-                        formulas={},
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[],
@@ -807,7 +779,7 @@ with openapi_client.ApiClient() as api_client:
                 Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[],
@@ -823,9 +795,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    discrete=Discrete(
-                        formulas={},
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[],
@@ -853,7 +822,7 @@ with openapi_client.ApiClient() as api_client:
                 Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[],
@@ -869,9 +838,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    discrete=Discrete(
-                        formulas={},
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[],
@@ -910,7 +876,7 @@ with openapi_client.ApiClient() as api_client:
                 item=Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[],
@@ -926,9 +892,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    discrete=Discrete(
-                        formulas={},
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[],
@@ -976,7 +939,7 @@ with openapi_client.ApiClient() as api_client:
                         item=Item(
                             name="name_example",
                             description="description_example",
-                            type="Discrete",
+                            type="CompoundedGrowth",
                             historical_value=HistoricalValue(
                                 fact_id="fact_id_example",
                                 fact_ids=[],
@@ -992,9 +955,6 @@ with openapi_client.ApiClient() as api_client:
                             formula="formula_example",
                             sum_of_other_items=SumOfOtherItems(
                                 components=[],
-                            ),
-                            discrete=Discrete(
-                                formulas={},
                             ),
                             manual_projections=ManualProjections(
                                 manual_projections=[],
@@ -1036,7 +996,7 @@ with openapi_client.ApiClient() as api_client:
                             item=Item(
                                 name="name_example",
                                 description="description_example",
-                                type="Discrete",
+                                type="CompoundedGrowth",
                                 historical_value=HistoricalValue(
                                     fact_id="fact_id_example",
                                     fact_ids=[],
@@ -1052,9 +1012,6 @@ with openapi_client.ApiClient() as api_client:
                                 formula="formula_example",
                                 sum_of_other_items=SumOfOtherItems(
                                     components=[],
-                                ),
-                                discrete=Discrete(
-                                    formulas={},
                                 ),
                                 manual_projections=ManualProjections(
                                     manual_projections=[],
@@ -1096,7 +1053,7 @@ with openapi_client.ApiClient() as api_client:
                         item=Item(
                             name="name_example",
                             description="description_example",
-                            type="Discrete",
+                            type="CompoundedGrowth",
                             historical_value=HistoricalValue(
                                 fact_id="fact_id_example",
                                 fact_ids=[],
@@ -1112,9 +1069,6 @@ with openapi_client.ApiClient() as api_client:
                             formula="formula_example",
                             sum_of_other_items=SumOfOtherItems(
                                 components=[],
-                            ),
-                            discrete=Discrete(
-                                formulas={},
                             ),
                             manual_projections=ManualProjections(
                                 manual_projections=[],
@@ -1154,7 +1108,7 @@ with openapi_client.ApiClient() as api_client:
             share_outstanding=Item(
                 name="name_example",
                 description="description_example",
-                type="Discrete",
+                type="CompoundedGrowth",
                 historical_value=HistoricalValue(
                     fact_id="fact_id_example",
                     fact_ids=[],
@@ -1170,9 +1124,6 @@ with openapi_client.ApiClient() as api_client:
                 formula="formula_example",
                 sum_of_other_items=SumOfOtherItems(
                     components=[],
-                ),
-                discrete=Discrete(
-                    formulas={},
                 ),
                 manual_projections=ManualProjections(
                     manual_projections=[],
@@ -1198,7 +1149,7 @@ with openapi_client.ApiClient() as api_client:
             profit_per_share=Item(
                 name="name_example",
                 description="description_example",
-                type="Discrete",
+                type="CompoundedGrowth",
                 historical_value=HistoricalValue(
                     fact_id="fact_id_example",
                     fact_ids=[],
@@ -1214,9 +1165,6 @@ with openapi_client.ApiClient() as api_client:
                 formula="formula_example",
                 sum_of_other_items=SumOfOtherItems(
                     components=[],
-                ),
-                discrete=Discrete(
-                    formulas={},
                 ),
                 manual_projections=ManualProjections(
                     manual_projections=[],
@@ -1329,7 +1277,7 @@ with openapi_client.ApiClient() as api_client:
                 Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[
@@ -1352,11 +1300,6 @@ with openapi_client.ApiClient() as api_client:
                                 item_name="item_name_example",
                             ),
                         ],
-                    ),
-                    discrete=Discrete(
-                        formulas={
-                            "key": "key_example",
-                        },
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[
@@ -1396,7 +1339,7 @@ with openapi_client.ApiClient() as api_client:
                 Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[],
@@ -1412,9 +1355,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    discrete=Discrete(
-                        formulas={},
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[],
@@ -1442,7 +1382,7 @@ with openapi_client.ApiClient() as api_client:
                 Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[],
@@ -1458,9 +1398,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    discrete=Discrete(
-                        formulas={},
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[],
@@ -1488,7 +1425,7 @@ with openapi_client.ApiClient() as api_client:
                 Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[],
@@ -1504,9 +1441,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    discrete=Discrete(
-                        formulas={},
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[],
@@ -1534,7 +1468,7 @@ with openapi_client.ApiClient() as api_client:
                 Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[],
@@ -1550,9 +1484,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    discrete=Discrete(
-                        formulas={},
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[],
@@ -1591,7 +1522,7 @@ with openapi_client.ApiClient() as api_client:
                 item=Item(
                     name="name_example",
                     description="description_example",
-                    type="Discrete",
+                    type="CompoundedGrowth",
                     historical_value=HistoricalValue(
                         fact_id="fact_id_example",
                         fact_ids=[],
@@ -1607,9 +1538,6 @@ with openapi_client.ApiClient() as api_client:
                     formula="formula_example",
                     sum_of_other_items=SumOfOtherItems(
                         components=[],
-                    ),
-                    discrete=Discrete(
-                        formulas={},
                     ),
                     manual_projections=ManualProjections(
                         manual_projections=[],
@@ -1657,7 +1585,7 @@ with openapi_client.ApiClient() as api_client:
                         item=Item(
                             name="name_example",
                             description="description_example",
-                            type="Discrete",
+                            type="CompoundedGrowth",
                             historical_value=HistoricalValue(
                                 fact_id="fact_id_example",
                                 fact_ids=[],
@@ -1673,9 +1601,6 @@ with openapi_client.ApiClient() as api_client:
                             formula="formula_example",
                             sum_of_other_items=SumOfOtherItems(
                                 components=[],
-                            ),
-                            discrete=Discrete(
-                                formulas={},
                             ),
                             manual_projections=ManualProjections(
                                 manual_projections=[],
@@ -1717,7 +1642,7 @@ with openapi_client.ApiClient() as api_client:
                             item=Item(
                                 name="name_example",
                                 description="description_example",
-                                type="Discrete",
+                                type="CompoundedGrowth",
                                 historical_value=HistoricalValue(
                                     fact_id="fact_id_example",
                                     fact_ids=[],
@@ -1733,9 +1658,6 @@ with openapi_client.ApiClient() as api_client:
                                 formula="formula_example",
                                 sum_of_other_items=SumOfOtherItems(
                                     components=[],
-                                ),
-                                discrete=Discrete(
-                                    formulas={},
                                 ),
                                 manual_projections=ManualProjections(
                                     manual_projections=[],
@@ -1777,7 +1699,7 @@ with openapi_client.ApiClient() as api_client:
                         item=Item(
                             name="name_example",
                             description="description_example",
-                            type="Discrete",
+                            type="CompoundedGrowth",
                             historical_value=HistoricalValue(
                                 fact_id="fact_id_example",
                                 fact_ids=[],
@@ -1793,9 +1715,6 @@ with openapi_client.ApiClient() as api_client:
                             formula="formula_example",
                             sum_of_other_items=SumOfOtherItems(
                                 components=[],
-                            ),
-                            discrete=Discrete(
-                                formulas={},
                             ),
                             manual_projections=ManualProjections(
                                 manual_projections=[],
@@ -1835,7 +1754,7 @@ with openapi_client.ApiClient() as api_client:
             share_outstanding=Item(
                 name="name_example",
                 description="description_example",
-                type="Discrete",
+                type="CompoundedGrowth",
                 historical_value=HistoricalValue(
                     fact_id="fact_id_example",
                     fact_ids=[],
@@ -1851,9 +1770,6 @@ with openapi_client.ApiClient() as api_client:
                 formula="formula_example",
                 sum_of_other_items=SumOfOtherItems(
                     components=[],
-                ),
-                discrete=Discrete(
-                    formulas={},
                 ),
                 manual_projections=ManualProjections(
                     manual_projections=[],
@@ -1879,7 +1795,7 @@ with openapi_client.ApiClient() as api_client:
             profit_per_share=Item(
                 name="name_example",
                 description="description_example",
-                type="Discrete",
+                type="CompoundedGrowth",
                 historical_value=HistoricalValue(
                     fact_id="fact_id_example",
                     fact_ids=[],
@@ -1895,9 +1811,6 @@ with openapi_client.ApiClient() as api_client:
                 formula="formula_example",
                 sum_of_other_items=SumOfOtherItems(
                     components=[],
-                ),
-                discrete=Discrete(
-                    formulas={},
                 ),
                 manual_projections=ManualProjections(
                     manual_projections=[],

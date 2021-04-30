@@ -17,7 +17,6 @@ from openapi_client.model.commentary import Commentary
 from openapi_client.model.component import Component
 from openapi_client.model.compounded_growth import CompoundedGrowth
 from openapi_client.model.derived_stock_analytics import DerivedStockAnalytics
-from openapi_client.model.discrete import Discrete
 from openapi_client.model.early_access_request import EarlyAccessRequest
 from openapi_client.model.edgar_entity import EdgarEntity
 from openapi_client.model.edgar_entity_source import EdgarEntitySource
@@ -36,6 +35,7 @@ from openapi_client.model.item import Item
 from openapi_client.model.manual_projection import ManualProjection
 from openapi_client.model.manual_projections import ManualProjections
 from openapi_client.model.model import Model
+from openapi_client.model.model_revenue_request import ModelRevenueRequest
 from openapi_client.model.model_template import ModelTemplate
 from openapi_client.model.mx_parser_evaluate_request import MxParserEvaluateRequest
 from openapi_client.model.mx_parser_evaluate_response import MxParserEvaluateResponse

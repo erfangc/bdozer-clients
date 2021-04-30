@@ -29,7 +29,6 @@ from openapi_client.model_utils import (  # noqa: F401
 def lazy_import():
     from openapi_client.model.commentary import Commentary
     from openapi_client.model.compounded_growth import CompoundedGrowth
-    from openapi_client.model.discrete import Discrete
     from openapi_client.model.fixed_cost import FixedCost
     from openapi_client.model.historical_value import HistoricalValue
     from openapi_client.model.manual_projections import ManualProjections
@@ -38,7 +37,6 @@ def lazy_import():
     from openapi_client.model.sum_of_other_items import SumOfOtherItems
     globals()['Commentary'] = Commentary
     globals()['CompoundedGrowth'] = CompoundedGrowth
-    globals()['Discrete'] = Discrete
     globals()['FixedCost'] = FixedCost
     globals()['HistoricalValue'] = HistoricalValue
     globals()['ManualProjections'] = ManualProjections
@@ -73,7 +71,6 @@ class Item(ModelNormal):
 
     allowed_values = {
         ('type',): {
-            'DISCRETE': "Discrete",
             'COMPOUNDEDGROWTH': "CompoundedGrowth",
             'SUMOFOTHERITEMS': "SumOfOtherItems",
             'CUSTOM': "Custom",
@@ -109,7 +106,6 @@ class Item(ModelNormal):
             'description': (str,),  # noqa: E501
             'historical_value': (HistoricalValue,),  # noqa: E501
             'sum_of_other_items': (SumOfOtherItems,),  # noqa: E501
-            'discrete': (Discrete,),  # noqa: E501
             'manual_projections': (ManualProjections,),  # noqa: E501
             'percent_of_revenue': (PercentOfRevenue,),  # noqa: E501
             'percent_of_another_item': (PercentOfAnotherItem,),  # noqa: E501
@@ -130,7 +126,6 @@ class Item(ModelNormal):
         'description': 'description',  # noqa: E501
         'historical_value': 'historicalValue',  # noqa: E501
         'sum_of_other_items': 'sumOfOtherItems',  # noqa: E501
-        'discrete': 'discrete',  # noqa: E501
         'manual_projections': 'manualProjections',  # noqa: E501
         'percent_of_revenue': 'percentOfRevenue',  # noqa: E501
         'percent_of_another_item': 'percentOfAnotherItem',  # noqa: E501
@@ -193,7 +188,6 @@ class Item(ModelNormal):
             description (str): [optional]  # noqa: E501
             historical_value (HistoricalValue): [optional]  # noqa: E501
             sum_of_other_items (SumOfOtherItems): [optional]  # noqa: E501
-            discrete (Discrete): [optional]  # noqa: E501
             manual_projections (ManualProjections): [optional]  # noqa: E501
             percent_of_revenue (PercentOfRevenue): [optional]  # noqa: E501
             percent_of_another_item (PercentOfAnotherItem): [optional]  # noqa: E501
