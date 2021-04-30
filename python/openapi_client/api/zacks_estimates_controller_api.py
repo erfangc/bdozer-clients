@@ -21,7 +21,7 @@ from openapi_client.model_utils import (  # noqa: F401
     none_type,
     validate_and_convert_types
 )
-from openapi_client.model.discrete import Discrete
+from openapi_client.model.manual_projections import ManualProjections
 
 
 class ZacksEstimatesControllerApi(object):
@@ -74,7 +74,7 @@ class ZacksEstimatesControllerApi(object):
                 async_req (bool): execute request asynchronously
 
             Returns:
-                Discrete
+                ManualProjections
                     If the method is called asynchronously, returns the request
                     thread.
             """
@@ -103,7 +103,7 @@ class ZacksEstimatesControllerApi(object):
 
         self.revenue_projections = _Endpoint(
             settings={
-                'response_type': (Discrete,),
+                'response_type': (ManualProjections,),
                 'auth': [],
                 'endpoint_path': '/api/zacks-estimates/revenue-projections',
                 'operation_id': 'revenue_projections',

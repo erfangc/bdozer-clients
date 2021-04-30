@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **revenue_projections**
-> Discrete revenue_projections(ticker)
+> ManualProjections revenue_projections(ticker)
 
 
 
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 import time
 import openapi_client
 from openapi_client.api import zacks_estimates_controller_api
-from openapi_client.model.discrete import Discrete
+from openapi_client.model.manual_projections import ManualProjections
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Discrete**](Discrete.md)
+[**ManualProjections**](ManualProjections.md)
 
 ### Authorization
 

@@ -133,7 +133,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **model_revenue**
-> Discrete model_revenue(revenue_model)
+> ManualProjections model_revenue(revenue_model)
 
 
 
@@ -143,7 +143,7 @@ No authorization required
 import time
 import openapi_client
 from openapi_client.api import revenue_modeler_controller_api
-from openapi_client.model.discrete import Discrete
+from openapi_client.model.manual_projections import ManualProjections
 from openapi_client.model.revenue_model import RevenueModel
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
@@ -183,7 +183,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Discrete**](Discrete.md)
+[**ManualProjections**](ManualProjections.md)
 
 ### Authorization
 

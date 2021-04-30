@@ -141,9 +141,4 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_manual_projection.py
-test/test_manual_projections.py
-test/test_percent_of_another_item_auto_fill.py
-test/test_revenue_model.py
-test/test_revenue_modeler_controller_api.py
 tox.ini

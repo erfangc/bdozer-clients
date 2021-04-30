@@ -76,7 +76,7 @@ with openapi_client.ApiClient() as api_client:
                 manual_projections=ManualProjections(
                     manual_projections=[
                         ManualProjection(
-                            period=1,
+                            fiscal_year=1,
                             value=3.14,
                         ),
                     ],
@@ -405,7 +405,7 @@ with openapi_client.ApiClient() as api_client:
                 manual_projections=ManualProjections(
                     manual_projections=[
                         ManualProjection(
-                            period=1,
+                            fiscal_year=1,
                             value=3.14,
                         ),
                     ],
@@ -734,7 +734,7 @@ with openapi_client.ApiClient() as api_client:
                 manual_projections=ManualProjections(
                     manual_projections=[
                         ManualProjection(
-                            period=1,
+                            fiscal_year=1,
                             value=3.14,
                         ),
                     ],

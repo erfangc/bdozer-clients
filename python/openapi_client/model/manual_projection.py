@@ -72,7 +72,7 @@ class ManualProjection(ModelNormal):
                 and the value is attribute type.
         """
         return {
-            'period': (int,),  # noqa: E501
+            'fiscal_year': (int,),  # noqa: E501
             'value': (float,),  # noqa: E501
         }
 
@@ -82,7 +82,7 @@ class ManualProjection(ModelNormal):
 
 
     attribute_map = {
-        'period': 'period',  # noqa: E501
+        'fiscal_year': 'fiscalYear',  # noqa: E501
         'value': 'value',  # noqa: E501
     }
 
@@ -98,11 +98,11 @@ class ManualProjection(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, period, value, *args, **kwargs):  # noqa: E501
+    def __init__(self, fiscal_year, value, *args, **kwargs):  # noqa: E501
         """ManualProjection - a model defined in OpenAPI
 
         Args:
-            period (int):
+            fiscal_year (int):
             value (float):
 
         Keyword Args:
@@ -161,7 +161,7 @@ class ManualProjection(ModelNormal):
         self._configuration = _configuration
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
-        self.period = period
+        self.fiscal_year = fiscal_year
         self.value = value
         for var_name, var_value in kwargs.items():
             if var_name not in self.attribute_map and \
